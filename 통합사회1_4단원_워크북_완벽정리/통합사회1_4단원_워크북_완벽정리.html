@@ -1,0 +1,760 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>통합사회1_4단원_워크북_완벽정리</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="364fe79a-7d80-80d4-a6b5-d3190772a06c" class="page sans"><header><h1 class="page-title" dir="auto">통합사회1_4단원_워크북_완벽정리</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><h1 id="364fe79a-7d80-8108-8758-f96b78032ac6" class="">Ⅳ. 문화와 다양성 (통합사회 1) - 워크북 완벽 정리본</h1></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8161-a089-c3483693d8a6"/></div><div style="display:contents" dir="auto"><h2 id="364fe79a-7d80-8141-9742-cc2cf2373f49" class="">1. 다양한 문화권의 특징 (교과서 78~87쪽)</h2></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81dc-91a1-c318263e2acf" class=""><strong>[학습 목표]</strong><br/>* 문화권 형성에 영향을 주는 자연환경과 인문환경 요인을 설명할 수 있다.<br/>* 다양한 문화권의 특징과 삶의 방식을 비교 문화의 관점에서 탐구할 수 있다.</p></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8149-aa39-c38e0639f44d"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81b3-8557-cd16eecaad0b" class="">[개념 확인] 1. 문화의 의미와 문화권 형성 요인</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-812a-ae79-e8e1aeaeb476" class="">(1) 문화와 문화권</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-810b-933e-f2253302c376" class="bulleted-list"><li style="list-style-type:disc"><strong>문화의 의미:</strong> 사람들이 환경과 상호 작용하는 과정에서 형성된 사회 전반의 공통적인 <strong>[생활양식]</strong>으로, 의식주, 종교, 언어, 풍습 등의 문화 요소로 구성됨.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8108-8963-d242e0980175" class="bulleted-list"><li style="list-style-type:disc"><strong>문화권의 의미:</strong> 문화적 특성이 유사하게 나타나 주위의 다른 지역과 구분되는 공간 범위.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81f4-b72e-efcf9d75f51a" class="bulleted-list"><li style="list-style-type:disc"><strong>문화권의 특징:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81eb-85bd-d4d6d915a920" class="bulleted-list"><li style="list-style-type:circle">한 <strong>[문화권]</strong> 내에서는 비슷한 생활양식과 <span style="border-bottom:0.05em solid">문화 경관</span>이 나타남.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8172-b454-d398c63cfc10" class="bulleted-list"><li style="list-style-type:circle"><strong>[인구(또는 문화)]</strong> 이동과 문화 전파 등을 통해 끊임없이 변화하기도 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8188-99e7-cd14e80cea94" class="bulleted-list"><li style="list-style-type:circle">보통 높은 산맥, 큰 하천, 사막 등의 <strong>[자연 장벽]</strong>에 의해 경계가 나뉘며, 서로 다른 문화권이 만나 교류하는 지역에서는 두 문화의 특성이 함께 나타나는 <mark class="highlight-pink_background"><strong>[점이 지대]***가 나타남.</strong></mark></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-80a5-a779-ebfd2b9192ad" class="bulleted-list"><li style="list-style-type:circle">자연환경, 인문환경의 영향을 받아 형성되며, <mark class="highlight-pink_background"><strong>어떤 [문화 요소(또는 기준)]로 구분하는지에 따라 범위가 달라짐.**\</strong></mark><mark class="highlight-pink_background">*</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-80b9-8a11-c35e27e9c115" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-pink_background"><strong>어떤 문화 요소로 문화권을 구분하는지에 따라서 한 지역이 다른 문화권으로 나뉘기도 하고, 여러 지역이 하나의 문화권으로 묶이기도 한다. **\</strong></mark><mark class="highlight-pink_background">*</mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><blockquote id="364fe79a-7d80-81f2-bdf8-fe99d1ea9c99" class="">💡 <strong>용어 사전</strong><br/>* <strong>문화 경관:</strong> 인간이 자연환경에 적응하고 이를 이용하는 과정에서 땅 위에 만들어 놓은 인공적인 모습 (예: 가옥, 종교 건축물, 논밭 등)</blockquote></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8178-8a3b-ec51ec676b50"/></div><div style="display:contents" dir="auto"><h3 id="46b06970-7266-4566-846d-1a6051b28cc1" class=""><mark class="highlight-yellow">🔍 자료 확인: 문화권 형성의 요인 분석</mark></h3></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8016-98f8-e204ab70fa3b" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image.png"><img style="width:576px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image.png"/></a></figure></div><div style="display:contents" dir="auto"><h4 id="5f051fad-5051-449b-837f-e4716d3f5184" class="">📍 문화권 형성 요인 분류표</h4></div><div style="display:contents" dir="ltr"><table id="e1a09389-559d-46b3-9620-560d07a5e522" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="d97e2fe5-605e-42bd-9fd0-e82f3d90cdb6"><th id="=}je" class="simple-table-header-color simple-table-header">구분</th><th id="ILcN" class="simple-table-header-color simple-table-header">문화권 형성의 구체적 사례</th><th id="r^pP" class="simple-table-header-color simple-table-header">문화 요소</th><th id="nKSH" class="simple-table-header-color simple-table-header">환경 요인</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="b71d80cb-ca2c-4bc9-ae4c-6c36e96b37e4"><td id="=}je" class="">가</td><td id="ILcN" class=""><strong>덥고 습한 기후의 영향을 받았다.</strong></td><td id="r^pP" class="">기후</td><td id="nKSH" class="">자연환경</td></tr></div><div style="display:contents" dir="ltr"><tr id="330c7b9f-0cdd-4183-95fe-d9fc04afde0c"><td id="=}je" class="">나</td><td id="ILcN" class=""><strong>크리스트교의 영향을 받았다.</strong></td><td id="r^pP" class="">종교</td><td id="nKSH" class="">인문환경</td></tr></div><div style="display:contents" dir="ltr"><tr id="ef5cf0a6-825a-45e9-a49d-1d34226747e7"><td id="=}je" class="">다</td><td id="ILcN" class=""><strong>산지 지역의 영향을 받았다.</strong></td><td id="r^pP" class="">지형</td><td id="nKSH" class="">자연환경</td></tr></div><div style="display:contents" dir="ltr"><tr id="ab141a3b-8620-4ca8-aa1f-c03005d6895f"><td id="=}je" class="">라</td><td id="ILcN" class=""><strong>이민자와 원주민의 문화가 융합된 역사의 영향을 받았다.</strong></td><td id="r^pP" class="">역사</td><td id="nKSH" class="">인문환경</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8058-ad8f-c31a3ad218f1"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81f5-8a85-e7bdcb3f6959" class=""><mark class="highlight-yellow">🗺️ [자료 확인] 점이 지대: 동서양의 교차로 ‘튀르키예 이스탄불’ ***</mark></h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c5-b427-d1365e0a91d3" class="bulleted-list"><li style="list-style-type:disc"><strong>특징:</strong> 지리적으로 매우 가까워 서로 다른 문화권끼리 교류가 활발하면 두 문화권의 특성이 융합되어 나타나는 공간을 뜻함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c5-bf54-d3ee32f671d8" class="bulleted-list"><li style="list-style-type:disc"><strong>사례:</strong> 튀르키예의 이스탄불은 유럽 대륙과 아시아 대륙의 경계 사이에 위치해 있어, 크리스트교 문화와 이슬람교 문화, 동양과 서양의 생활문화가 동시에 경관에 나타남.</li></ul></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8033-a287-e65d0c3fffc7" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-05-18_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.28.49.png"><img style="width:384px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-05-18_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.28.49.png"/></a></figure></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81d5-88d3-f86442e86f7d"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-808c-824d-d97a6780e9a5" class=""><mark class="highlight-yellow">[자료 확인]문화권 구분 기준에 따른 범위의 변화</mark></h3></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-808d-89a0-ef624a7fe9ca" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%201.png"><img style="width:384px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%201.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-807f-b7c2-d96f6aae1f6d" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-800e-9e3e-eec73da1b19f"><td id="ZgbQ" class=""><strong>국가</strong></td><td id="Ca?E" class=""><strong>전통 가옥 재료</strong></td><td id="ffQd" class=""><strong>사용 언어</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8065-b63b-e9f4ff5933a3"><td id="ZgbQ" class=""><strong>노르웨이</strong></td><td id="Ca?E" class="">🌲 통나무</td><td id="ffQd" class="">🗣️ 게르만어</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8032-86ac-e0419aa4f201"><td id="ZgbQ" class=""><strong>벨라루스</strong></td><td id="Ca?E" class="">🌲 통나무</td><td id="ffQd" class="">🗣️ 슬라브어</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-80b7-8fdf-d79c9dc13a2d"/></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-80cc-bc01-f39973a04dba"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8131-bef3-e8a21a9a2ad6" class="">(2) 자연환경의 영향을 받아 형성된 문화권</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81b4-b2c0-f40f338c9fd3" class="">문화권은 주로 <strong>[기후]</strong>와 지형 등의 자연환경 요인에 순응하거나 이를 극복하는 과정에서 뚜렷하게 형성됩니다.</p></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-8161-a2ab-e2a6cdc88621" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8139-b498-e8eb1cf22b2d"><th id="oE[H" class="simple-table-header-color simple-table-header">구분</th><th id="y{NW" class="simple-table-header-color simple-table-header">덥고 습한 지역 (열대 기후)</th><th id="KQrV" class="simple-table-header-color simple-table-header">건조한 지역 (사막 및 초원)</th><th id="zIWT" class="simple-table-header-color simple-table-header">추운 기후 지역 (한대/냉대)</th><th id="b&lt;Hb" class="simple-table-header-color simple-table-header">온화한 중위도 지역 (온대)</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-81ac-bb07-f4e3ad72c8e4"><td id="oE[H" class=""><strong>의복</strong></td><td id="y{NW" class="">통풍이 잘되는 얇고 가벼운 옷</td><td id="KQrV" class="">모래바람과 강한 햇빛을 피하기 위한 <strong>[온몸을 가리는 긴 옷]</strong></td><td id="zIWT" class=""><strong>[체온 유지(보온)]</strong>에 유리한 두꺼운 털옷이나 가죽옷</td><td id="b&lt;Hb" class="">계절 변화에 따른 다양한 의복 발달</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8171-a4a1-d8abd276e406"><td id="oE[H" class=""><strong>음식</strong></td><td id="y{NW" class="">음식이 상하는 것을 막기 위한 <strong>[향신료와 기름]</strong> 사용 음식</td><td id="KQrV" class="">가축의 고기와 유제품 중심, 혹은 오아시스 농업을 통한 밀</td><td id="zIWT" class="">열량이 높은 육류와 소시지 등 <strong>[저장 음식]</strong> 발달</td><td id="b&lt;Hb" class="">다양한 곡물, 과일, 채소 등을 활용한 균형 잡힌 음식</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-810c-a98f-f74165d06ff7"><td id="oE[H" class=""><strong>주거</strong></td><td id="y{NW" class="">개방적인 구조, 고상 가옥</td><td id="KQrV" class="">주변에서 구하기 쉬운 <strong>[흙]</strong>을 이용한 흙벽돌집</td><td id="zIWT" class="">냉대림의 <strong>[나무(통나무)]</strong>나 높은 산지의 돌을 이용한 가옥</td><td id="b&lt;Hb" class="">기후에 맞춰 정착에 유리한 가옥 구조</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81ac-8a95-d099582f653b"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81f9-b32a-e6c893338d31" class="">🌾 [자료 확인] 세계의 주식(主食) 문화권 구분</h3></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8088-9eae-f73d7b07bbb8" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/7022ddc7-3e9b-4830-84e3-2ac919ea9eee.png"><img style="width:556.1425576519915px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/7022ddc7-3e9b-4830-84e3-2ac919ea9eee.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-811b-bfc8-fbbdd7c7de1b" class=""><em>▲ 세계의 자연환경(기후·토양)에 따라 다르게 나타나는 농업 및 주식 문화 분포도</em></p></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a5-8e91-f7aa3ad96106" class="bulleted-list"><li style="list-style-type:disc">🌾 <strong>쌀 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81e1-b322-fa55951a9aed" class="bulleted-list"><li style="list-style-type:circle"><strong>지역:</strong> 동아시아, 남부 아시아, 동남아시아 지역.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a0-acd6-f1c9b4fd20d4" class="bulleted-list"><li style="list-style-type:circle"><strong>원인:</strong> 여름철 기온이 높고 강수량이 풍부하여 <strong>[벼농사]</strong>가 발달하기에 최적의 조건을 가짐.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a0-8c28-f9346bf8ed35" class="bulleted-list"><li style="list-style-type:circle"><strong>음식 문화:</strong> 쌀을 주재료로 함. (예: 베트남의 퍼[쌀국수], 인도네시아의 나시 고랭[볶음밥], 한국의 밥 문화)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816a-be09-f185633a35ed" class="bulleted-list"><li style="list-style-type:disc">🥖 <strong>밀 및 고기 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81cd-95a7-f604f9c4f00a" class="bulleted-list"><li style="list-style-type:circle"><strong>지역:</strong> 북서 유럽, 앵글로아메리카 등 중·고위도 지역.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d5-8dca-eb4d0b257cdd" class="bulleted-list"><li style="list-style-type:circle"><strong>원인:</strong> 밀은 재배 조건이 벼보다 까다롭지 않아 <strong>[서늘하고 건조한]</strong> 기후에서도 잘 자람. 유럽은 가축 사육과 곡물 농업을 함께하는 <strong>[혼합 농업]</strong>이 크게 발달함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8149-b845-ca68f06c5992" class="bulleted-list"><li style="list-style-type:circle"><strong>음식 문화:</strong> 밀가루를 이용한 빵, 가축의 고기와 유제품을 혼합한 요리.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8129-982b-d092000d4cf4" class="bulleted-list"><li style="list-style-type:disc">🥔 <strong>감자 및 옥수수 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812f-ae34-eb1b016c72d2" class="bulleted-list"><li style="list-style-type:circle"><strong>지역:</strong> 중남미 저위도의 <strong>[고산 산지 지역]</strong>(안데스 산맥 등).</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8131-a29b-f0d26b619c3f" class="bulleted-list"><li style="list-style-type:circle"><strong>원인:</strong> 척박하고 <strong>[서늘한 기후]</strong>에서도 생육이 잘 되는 구황작물인 감자와 옥수수가 주식으로 정착함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-817d-b4cd-e025243c82d6" class="bulleted-list"><li style="list-style-type:circle"><strong>음식 문화:</strong> 멕시코의 토르티야(옥수수 반죽 구이), 페루의 감자 요리.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-815b-b3fd-ccc2a708ad8a" class="bulleted-list"><li style="list-style-type:disc">🥩 <strong>고기 및 유제품(목축) 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81fb-8b5a-e1bed8c8a3d0" class="bulleted-list"><li style="list-style-type:circle"><strong>지역:</strong> 건조 초원 지대(몽골 등) 및 강수량이 부족해 농사에 불리한 지역.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8168-8329-cbf8818eab05" class="bulleted-list"><li style="list-style-type:circle"><strong>원인:</strong> 풀과 물을 찾아 유목 생활을 하며 <strong>[가축]</strong>을 기르는 것이 생계의 중심임.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-817c-a218-dd17a2d085d3" class="bulleted-list"><li style="list-style-type:circle"><strong>음식 문화:</strong> 가축의 고기와 젖을 짠 유제품 중심. (예: 몽골의 허르헉[양고기 찜 요리])</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81a4-980d-c2cbec00078c"/></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8042-b385-fe0dcc7c8a90" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%202.png"><img style="width:720px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%202.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-804f-ab6b-cc8686ace468" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8055-ba1f-d415fcb4403c"><td id="ky|:" class=""><strong>구분</strong></td><td id="Bj@a" class=""><strong>음식 및 요리 특징</strong></td><td id="sGLc" class=""><strong>연결 지도</strong></td><td id="cEK`" class=""><strong>주요 국가/지역</strong></td><td id="\ay=" class=""><strong>자연환경 (기후 및 지형)</strong></td><td id="DPq?" class="" style="width:303px"><strong>음식 재료와 요리 방법에 미친 영향</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-809b-94b2-d06b9aacec66"><td id="ky|:" class="">가<br/>(너밍)</td><td id="Bj@a" class="">🍖 <strong>허르혹</strong><br/>(돌을 이용한 고기 요리)</td><td id="sGLc" class="">ㄴ</td><td id="cEK`" class="">몽골<br/>(동·중앙아시아)</td><td id="\ay=" class="">• <strong>건조 기후</strong><br/>• 강수량이 적고 넓은 초원 지대</td><td id="DPq?" class="" style="width:303px">• 농경이 불리하여 가축을 기르는 <strong>유목 생활</strong> 발달 ➔ <strong>육류와 유제품</strong>이 주식<br/>• 나무가 없어 <strong>땔감이 매우 부족</strong>함 ➔ 달군 돌을 이용해 속까지 빠르게 익히는 요리법 발달</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8013-8a23-c6fee969026e"><td id="ky|:" class="">나<br/>(베트남)</td><td id="Bj@a" class="">🍜 <strong>쌀국수</strong><br/>(쌀을 이용한 국물 요리)</td><td id="sGLc" class=""><strong>ㄷ</strong></td><td id="cEK`" class="">베트남<br/>(동남아시아)</td><td id="\ay=" class="">• <strong>고온다습한 기후</strong><br/>• 비옥한 평야와 계절풍의 영향</td><td id="DPq?" class="" style="width:303px">• 많은 열과 물이 필요한 <strong>벼농사에 최적의 조건</strong> ➔ <strong>쌀</strong>이 주식이 됨<br/>• 음식을 장기 보관하기 어렵고 상하기 쉬움 ➔ <strong>다양한 향신료와 소스, 뜨거운 육수</strong> 문화 발달</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-80b8-98a5-c6cd01829fa0"><td id="ky|:" class="">다<br/>(알베르토)</td><td id="Bj@a" class="">🫒 <strong>지중해식 요리</strong><br/>(올리브유와 해산물 요리)</td><td id="sGLc" class="">ㄱ</td><td id="cEK`" class="">이탈리아<br/>(남부 유럽 지중해 연안)</td><td id="\ay=" class="">• <strong>지중해성 기후</strong><br/>(여름 고온 건조 / 겨울 온화 다우)</td><td id="DPq?" class="" style="width:303px">• 여름 가뭄에 강한 **수목 농업(올리브, 포도)**과 <strong>밀 농사</strong> 발달 ➔ **올리브유와 파스타(밀)**가 주재료<br/>• 바다와 인접함 ➔ <strong>신선한 해산물</strong>을 활용하며, 식재료 본연의 맛을 살리는 가벼운 조리법 발달</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-806b-858b-e8c22d52d0af"><td id="ky|:" class="">라<br/>(크리스티나)</td><td id="Bj@a" class="">🌮 <strong>토르티야 &amp; 타코</strong><br/>(옥수수 반죽 요리)</td><td id="sGLc" class=""><strong>ㄹ</strong></td><td id="cEK`" class="">멕시코<br/>(중남미 고산·건조 지역)</td><td id="\ay=" class="">• <strong>고산 및 건조 기후</strong><br/>• 다소 척박하고 물이 부족함</td><td id="DPq?" class="" style="width:303px">• 척박한 땅에서도 잘 자라는 <strong>옥수수의 원산지</strong> ➔ <strong>옥수수</strong>가 고대부터 핵심 주식<br/>• 단단한 옥수수 알갱이를 갈아서 구운 <strong>토르티야</strong>로 조리 ➔ 상온 보관과 이동이 쉽도록 채소·고기를 싸 먹는 문화 발달</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8186-a274-f2744fa2376d" class="">(3) 인문환경의 영향을 받아 형성된 문화권</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8112-8bd0-cbe820ed5ac8" class="">종교, 산업, 가치관, 이념 등의 <strong>[인문 요인]</strong>은 사람들의 정서뿐 아니라 가옥, 도시 경관 등 시각적 문화 경관을 형성하는 데 엄청난 영향을 미칩니다.</p></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-817c-a4ed-efe846b92ec4" class="">① 종교의 영향을 특징으로 하는 문화권</h3></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8038-b833-e232d5be8832" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%203.png"><img style="width:665.5012817382812px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%203.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-813f-9b76-c6c5036ebd0a" class="">종교는 사람들의 의식, 규범, 세계관에 깊숙이 반영됩니다.</p></div><div style="display:contents" dir="auto"><ul id="32cc5b61-0247-48a0-ac2c-76411be38b45" class="bulleted-list"><li style="list-style-type:disc"><strong>✝️ </strong>크리스트교 문화권<div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8085-8f3a-f9debd9d4ad5" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%204.png"><img style="width:234.00390625px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%204.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><ul id="73a2d545-2c65-41c2-9922-fd962ed7fbd9" class="bulleted-list"><li style="list-style-type:disc"><strong>신자 수 순위: 1위</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="b5c7fec8-be36-4db5-a8fb-1177cad27b37" class="bulleted-list"><li style="list-style-type:disc"><strong>주요 분포 지역:</strong> 유럽, 아메리카, 오세아니아, 아프리카 중·남부</li></ul></div><div style="display:contents" dir="auto"><ul id="f646cbaa-1d47-46c6-be51-c46cf71b4856" class="bulleted-list"><li style="list-style-type:disc"><strong>특징:</strong> <strong>[하느님(하나님)]</strong>을 유일신으로 섬기며 예수를 구원자로 믿음.</li></ul></div><div style="display:contents" dir="auto"><ul id="9063a3d7-2723-4814-b5e5-5dbd634f2a29" class="bulleted-list"><li style="list-style-type:disc"><strong>문화 경관 및 양식:</strong> 마을 중심에 <strong>[교회나 성당]</strong>이 밀집해 있으며 세례, 결혼, 장례 등의 의식이 종교 양식에 맞춰 진행됨.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-80bc-a878-e16da0ce30f2" class="bulleted-list"><li style="list-style-type:disc"><strong>☪️ 이슬람교 문화권</strong><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8004-a00f-f460eb12563f" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/4d173fc6-38dc-4eb1-98a9-220af8393a16.png"><img style="width:240px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/4d173fc6-38dc-4eb1-98a9-220af8393a16.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><ul id="ebbe44c2-5c60-4a37-bc38-ed6b756b00be" class="bulleted-list"><li style="list-style-type:disc"><strong>신자 수 순위: 2위</strong> </li></ul></div><div style="display:contents" dir="auto"><ul id="4e210b70-5773-4557-9a47-69d2a5817850" class="bulleted-list"><li style="list-style-type:disc"><strong>주요 분포 지역:</strong> 북부 아프리카, 건조 아시아(서남아시아·중앙아시아), 동남아시아 일부(인도네시아·말레이시아)</li></ul></div><div style="display:contents" dir="auto"><ul id="736ea91f-1c79-4904-a185-13178e81f0bc" class="bulleted-list"><li style="list-style-type:disc"><strong>특징:</strong> 알라를 유일신으로 섬기며, 신의 계시가 담긴 성전인 <strong>[쿠란(코란)]</strong>의 율법에 따라 철저히 생활함. 하루 5번 성지 메카를 향해 기도함.</li></ul></div><div style="display:contents" dir="auto"><ul id="618cfea3-45b2-47c6-8eb1-11646024b277" class="bulleted-list"><li style="list-style-type:disc"><strong>금기 및 문화:</strong> 이슬람 율법에 허용된 음식인 <strong>[할랄]</strong> 산업이 발달함. <strong>[</strong><mark class="highlight-yellow"><strong>돼지고기</strong></mark><strong>와 술]</strong> 섭취를 엄격히 금지함. 해가 떠 있는 동안 금식하는 ‘라마단’ 기간이 존재함. 여성들은 신체 노출을 최소화하기 위해 히잡, 차도르 등을 착용함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8077-80c5-f714cb882cb7" class="bulleted-list"><li style="list-style-type:disc"><strong>🕉️ 힌두교 문화권</strong><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-800b-a03b-d07d71139e96" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%205.png"><img style="width:144px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%205.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><ul id="572edfba-09e9-4856-a5ec-7cfda345745b" class="bulleted-list"><li style="list-style-type:disc"><strong>신자 수 순위: 3위</strong> </li></ul></div><div style="display:contents" dir="auto"><ul id="5e8a9cde-a3f2-4c3f-bb3c-486f99e8f184" class="bulleted-list"><li style="list-style-type:disc"><strong>주요 분포 지역:</strong> 남부 아시아(인도, 네팔 등 특정 지역에 집중됨)</li></ul></div><div style="display:contents" dir="auto"><ul id="287f9790-6188-46b7-b88f-e439b206a2ae" class="bulleted-list"><li style="list-style-type:disc"><strong>특징:</strong> 수많은 신을 인정하고 숭배하는 대표적인 <strong>[다신교]</strong>임. 인간의 영혼이 업에 따라 끊임없이 돌고 돈다는 <strong>[윤회 사상]</strong>을 강력히 믿음.</li></ul></div><div style="display:contents" dir="auto"><ul id="8fa6024c-b8be-43da-ac0e-a78b741bc763" class="bulleted-list"><li style="list-style-type:disc"><strong>금기 및 문화:</strong> 죄를 씻어내기 위해 신성한 <strong>[갠지스강]</strong>에서 목욕재계를 함. 소(牛)를 신이 타고 다니는 신성한 동물로 여기기 때문에 <strong>[</strong><mark class="highlight-yellow"><strong>소고기</strong></mark><strong>]</strong> 섭취를 절대 금기하며 채식주의를 대단히 선호함. 카스트 제도의 흔적이 사회 규범에 남아 있음.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-80ef-a878-d62b1e90ed3f" class="bulleted-list"><li style="list-style-type:disc"><strong>☸️ 불교 문화권</strong><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-80b5-b639-ef38628a0624" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%206.png"><img style="width:240px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%206.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><ul id="dbb4a385-a197-4e22-a07f-8e41af8c91f0" class="bulleted-list"><li style="list-style-type:disc"><strong>신자 수 순위: 4위</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="142d08e1-c435-475d-84c5-919b7c2ef988" class="bulleted-list"><li style="list-style-type:disc"><strong>주요 분포 지역:</strong> 동아시아(한국·중국·일본) 및 동남아시아 대륙부(태국·미얀마·캄보디아 등)</li></ul></div><div style="display:contents" dir="auto"><ul id="ec21b63a-67e7-4b48-9c71-bcc173c118d2" class="bulleted-list"><li style="list-style-type:disc"><strong>특징:</strong> 창시자인 <strong>[석가모니(부처)]</strong>의 가르침에 따라 자비를 베풀고, 스스로 마음을 다스리는 수양을 거쳐 해탈(깨달음)을 얻는 것을 궁극적 목적으로 삼음.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81df-92ad-e28d6c934693" class="bulleted-list"><li style="list-style-type:disc"><strong>문화 경관 및 양식:</strong> 곳곳에 사찰과 불탑 경관이 발달함. 이른 아침 승려들에게 음식을 대접하고 공경을 표하는 <strong>[탁발 및 공양]</strong> 문화가 일상적으로 나타남(특히 동남아시아).</li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81e2-8570-f7ddb14ab972"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-819b-9bc3-d15a9aedc345" class="">② 산업의 영향을 특징으로 하는 문화권</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81ae-a1a5-e71693e2c6d8" class="bulleted-list"><li style="list-style-type:disc"><strong>🌾 농업 중심 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c1-b295-eaa8b5c52f16" class="bulleted-list"><li style="list-style-type:circle"><strong>특징:</strong> 한곳에 오래 머무는 <strong>[정착 생활]</strong>이 기본이며, 대규모 노동력이 필요한 농사일을 함께 수행하면서 <strong>[공동체(두레, 품앗이)]</strong> 중심의 협동 문화가 고도로 발달함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8115-8656-f3dd727a0928" class="bulleted-list"><li style="list-style-type:circle"><strong>생활 리듬:</strong> 작물의 파종과 수확 주기에 맞춰 <strong>[농번기와 농한기]</strong>의 리듬이 뚜렷함. 가을철 수확 시기에는 감사와 기쁨을 나누는 대규모 축제가 열림 (예: 한국의 추석, 미국의 추수 감사절).</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81af-94d2-f3977f3f18b5" class="bulleted-list"><li style="list-style-type:disc"><strong>🐎 유목(목축) 중심 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8152-8339-d5440f4ea0ad" class="bulleted-list"><li style="list-style-type:circle"><strong>특징:</strong> 가축의 먹이인 물과 풀을 찾아 주기적으로 거처를 옮기는 <strong>[이동 생활]</strong>을 함. 가옥 구조 또한 조립과 해체가 신속한 텐트 형태(예: 몽골의 게르)가 발달함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81e1-990f-ff93641ad2e6" class="bulleted-list"><li style="list-style-type:circle"><strong>생활 양식:</strong> 의식주에 필요한 거의 모든 재료(고기, 유제품, 가죽 옷, 텐트 천)를 가축으로부터 자급자족함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81ed-9b5e-d086db794164" class="bulleted-list"><li style="list-style-type:disc"><strong>🏢 상공업 및 첨단 산업 중심 문화권:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81f2-9c75-e95b910684d2" class="bulleted-list"><li style="list-style-type:circle"><strong>특징:</strong> 공장, 회사, 고층 빌딩, 교통망이 조밀하게 밀집한 고밀도의 <strong>[도시 경관]</strong>이 형성됨. 매일 아침 주거지에서 직장으로 출퇴근하는 반복적인 생활 리듬을 가짐.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816d-9202-cce9e5bdb55c" class="bulleted-list"><li style="list-style-type:circle"><strong>생활 양식:</strong> 효율성과 전문성을 중시하는 <strong>[도시적/개인주의적]</strong> 생활양식이 보편화됨.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8185-929a-d836e4c93a19" class="bulleted-list"><li style="list-style-type:circle"><strong>💡 실리콘 밸리 사례:</strong> 미국의 첨단 산업 집적지인 실리콘 밸리에서는 끊임없는 혁신을 이뤄내기 위해 직원의 전문성과 다양성을 극한으로 강조하며, 매우 개방적이고 <strong>[수평적인]</strong> 기업 문화 경관을 보여줌.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8169-9d2e-d622773c246b"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8112-bac2-f39e21de4ba2" class="">🗺️ [전체 확인] 세계의 10대 대문화권 구분과 특징</h3></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-806e-bd7d-e642d7ac0288" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%207.png"><img style="width:703.9973754882812px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%207.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-807d-b103-c66ae28e2407" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-80e9-80a1-efcc56b571ba"><td id="PmDr" class=""><strong>동아시아</strong></td><td id="AMwe" class="">우리나라, 일본, 중국, 몽골 등을 아우르는 지역</td><td id="ouRj" class="">계절풍의 영향을 받아 <strong>벼농사가 발달</strong>함. 정착 생활 기반의 농경 문화 형성.</td><td id="eHxP" class="">**유교(예: 군자, 맹자 사상)**와 <strong>불교문화</strong>가 주로 나타남.</td><td id="Mt|c" class="">• <strong>한자</strong>와 <strong>젓가락</strong> 사용• 쌀로 만든 음식(점성이 커 밥, 죽, 떡 제조)• 수확기 축제: 우리나라의 <strong>추석</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8066-9d56-e23dc48165bd"><td id="PmDr" class=""><strong>동남아시아</strong></td><td id="AMwe" class="">인도양과 태평양이 만나는 지역</td><td id="ouRj" class=""><strong>교통의 요지</strong>이자 대표적인 <strong>열대 기후</strong> 지역. 선진국 자본·기술과 원주민 노동력을 결합한 <strong>플랜테이션 농업</strong> 발달.</td><td id="eHxP" class="">외부 문화 유입이 잦아 <strong>불교, 이슬람교, 크리스트교 등 여러 종교가 복합적으로 혼재</strong>함.</td><td id="Mt|c" class="">• 불교 경관: 미얀마의 <strong>쉐다곤 파고다</strong>• 음식: 베트남의 <strong>퍼(쌀국수)</strong>, 인도네시아의 <strong>나시 고랭(볶음밥)</strong>• 축제: 타이의 <strong>송끄란 축제</strong>(우기에 비가 많이 오길 바라며 불상을 물로 씻는 데서 유래)</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8011-9a3c-d585bcb537d4"><td id="PmDr" class=""><strong>남부 아시아</strong></td><td id="AMwe" class="">인도 및 주변 국가 지역</td><td id="ouRj" class=""><strong>인더스 문명의 발상지</strong>. 지형적 특성과 역사적 배경 보유.</td><td id="eHxP" class=""><strong>힌두교와 불교의 발상지</strong>. 외세의 영향으로 <strong>언어, 종교, 민족 구성이 매우 다양</strong>하여 갈등 발생.</td><td id="Mt|c" class="">• 힌두교 경관: 인도의 <strong>스리미낙시 힌두교 사원</strong>• 풍습: <strong>갠지스강 목욕</strong>(죄를 씻기 위함), <strong>소 섭취 금기</strong> 및 채식 선호• 축제: 인도의 <strong>홀리 축제</strong>(봄맞이 의식, 신분/성별 상관없이 물과 염료 뿌림)</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-803b-9221-c00d26ee6709" class=""><mark class="highlight-yellow">[자료 확인] 남부아시아의 카슈미르 분쟁</mark></h3></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8037-8542-efba10e47dfa" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%208.png"><img style="width:288px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%208.png"/></a></figure></div><div style="display:contents" dir="auto"><blockquote id="364fe79a-7d80-8066-948b-fb182a8056e4" class="">• 이곳은 인도와 파키스탄의 접경지대로, 두 국가 간의 영토 분쟁이 지속되고 있다.</blockquote></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8090-9759-f1c47f136e6e" class="">&lt;260315&gt;</p></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-80b7-b3a5-e528b2947088" class="bulleted-list"><li style="list-style-type:disc">주민 대다수는 이슬람교를 믿지만, 과거 통치자가 힌두교도였던 역사적 배경으로 인해 종교적 갈등이 심각하다.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8088-bc05-ccb3706a5025" class="bulleted-list"><li style="list-style-type:disc">A: 파키스탄(이슬람교), B: 인도(힌두교)</li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8041-bba5-c8d115bfc1ab"/></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-80af-9258-e37b0318643f" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%209.png"><img style="width:704.00390625px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%209.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-8058-9e7e-ff13512ebd99" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8035-a798-e74f7798257b"><td id="==ca" class=""><strong>건조(이슬람)</strong></td><td id="Y]x[" class="">북부 아프리카, 서남아시아, 중앙아시아 지역</td><td id="xFrW" class=""><strong>사막과 초원</strong>이 넓게 분포. 사막은 <strong>오아시스 농업</strong>(대추야자, 밀 재배), 초원은 <strong>유목 생활</strong> 중심.</td><td id="L^rs" class="">대부분 <strong>아랍어</strong>를 사용하며, <strong>이슬람교</strong>의 엄격한 계율을 따름.</td><td id="q&lt;WI" class="">• 의복: 모래바람을 막는 <strong>온몸을 가리는 긴 옷(히잡, 차도르)</strong>• 생활: 하루 5번 메카 카바 신전 향해 기도, <strong>돼지고기·술 금지</strong>, <strong>할랄 산업</strong>, <strong>라마단 금식</strong>• 산업: <strong>세계적인 석유 매장지</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8008-8721-d741f6ce5cb9"><td id="==ca" class=""><strong>아프리카</strong></td><td id="Y]x[" class="">사하라 사막 이남의 중·남부 아프리카</td><td id="xFrW" class=""><strong>열대 기후</strong>가 넓게 나타남. 과거 제국주의 국가들의 <strong>식민 지배 영향으로 플랜테이션 농업</strong>(카카오, 커피 대규모 생산) 발달.</td><td id="L^rs" class=""><strong>부족 단위의 공동체 생활</strong>을 유지하며, 부족마다 고유의 언어, 종교, 풍습이 달라 문화적 다양성 높음.</td><td id="q&lt;WI" class="">• 전통 토속 신앙의 경관과 유입된 크리스트교 공존• 주거: 초원 지역에서는 가축의 털과 가죽을 이용하여 집을 지음• <strong>★ [시험 단골] 동남아시아와 아프리카는 둘 다 열대 기후이며 플랜테이션 농업이 발달했다는 공통점이 있음</strong></td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8065-97d5-fa7ae9e673e3"/></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8063-a86d-e6e615723010" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2010.png"><img style="width:704.00390625px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2010.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-80a4-ad5f-c3bd84d65302" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8038-b93f-cebb805700ca"><td id="Gw&gt;A" class=""><strong>유럽</strong></td><td id="SL`&gt;" class=""><strong>[공통 기본 바탕] 시민 혁명, 근대 자본주의, 크리스트교 문화</strong>가 깊게 뿌리내려 있음.</td><td id="jSVk" class=""></td><td id="^^&lt;=" class=""></td><td id="r`D@" class=""></td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-80df-a5bf-fb98a2b2f5bb"><td id="Gw&gt;A" class="">└ <em>북서유럽</em></td><td id="SL`&gt;" class="">영국, 프랑스, 독일 등</td><td id="jSVk" class="">편서풍의 영향으로 연중 습윤하고 겨울이 온화한 <strong>서안 해양성 기후</strong> ➔ 식량 재배와 가축 사육을 겸하는 <strong>혼합 농업</strong> 발달.</td><td id="^^&lt;=" class=""><strong>게르만족</strong>과 <strong>개신교</strong> 비율이 높음. 경제 발전 수준이 높고 <strong>산업 혁명의 발상지</strong>임.</td><td id="r`D@" class="">• 경관: 독일의 <strong>쾰른 성당</strong>• 음식: 프랑스의 <strong>치즈</strong>(우유 숙성)• 축제: 스웨덴의 <strong>하지 축제</strong>(겨울이 길고 흐려 햇빛을 소중히 여겨 열림)</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-80eb-9ce1-cabdaa43e797"><td id="Gw&gt;A" class="">└ <em>남부유럽</em></td><td id="SL`&gt;" class="">지중해 연안 국가들</td><td id="jSVk" class="">여름철 고온 건조한 <strong>지중해성 기후</strong>가 나타나 올리브, 포도, 오렌지 등을 재배하는 <strong>수목 농업</strong> 발달.</td><td id="^^&lt;=" class=""><strong>라틴족</strong>과 <strong>가톨릭교</strong>의 비중이 매우 높음.</td><td id="r`D@" class="">• 산업: <strong>그리스·로마 문화 유적</strong>과 여름철 맑은 날씨를 활용한 <strong>관광 산업</strong> 발달</td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-809a-973e-cbeffa20b2db"><td id="Gw&gt;A" class="">└ <em>동부유럽</em></td><td id="SL`&gt;" class="">동유럽 및 러시아 일대</td><td id="jSVk" class="">온대 기후와 냉대 기후가 교차함. 다른 유럽 지역에 비해 농업 등 <strong>1차 산업 종사자 비율이 높음</strong>.</td><td id="^^&lt;=" class=""><strong>슬라브족</strong>과 <strong>동방 정교회</strong>의 비중이 높고 언어가 매우 다양함. (사회주의 진영 붕괴 과정에서 독립한 국가가 많음)</td><td id="r`D@" class="">• 경관: 러시아의 <strong>성 바실리 대성당</strong>• <strong>★[누락 충원] 농업: 세계적인 밀 곡창 지대인 우크라이나의 밀밭 위치</strong></td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-809f-9012-c35d7267692a"/></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8056-9eb6-ede561833a7e" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2011.png"><img style="width:704.00390625px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2011.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-805f-a371-ff36e9564301" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-8041-ba54-e2f528d5b908"><td id="x|Aw" class=""><strong>앵글로아메리카</strong></td><td id="UvYG" class=""><strong>리오그란데강의 북쪽</strong> 지역 (미국, 캐나다 등)</td><td id=":q=S" class="">드넓은 평원을 바탕으로 대형 기계를 이용해 밀, 옥수수 등을 대량 생산하는 <strong>기업적 곡물 농업</strong>과 대규모 농목업 발달.</td><td id="QvOu" class="">과거 <strong>북서 유럽(영국)의 식민 지배</strong> 영항으로 <strong>영어</strong>를 사용하고 <strong>개신교</strong>를 주로 믿음. 유럽·아프리카·아시아계, 히스패닉 등 <strong>다민족 사회</strong> 형성.</td><td id="V^QI" class="">• 문화: 미국의 <strong>실리콘 밸리</strong>(개방적이고 수평적인 첨단 산업 기업 문화)• 상징물: <strong>자유의 여신상</strong>(&#x27;아메리칸드림&#x27;과 이민자의 역사를 상징)• 수확기 축제: 미국의 <strong>추수 감사절</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-808d-a55a-cd30cb168250"><td id="x|Aw" class=""><strong>라틴아메리카</strong></td><td id="UvYG" class=""><strong>리오그란데강의 남쪽</strong> 지역 (중·남부 아메리카)</td><td id=":q=S" class="">열대 기후 환경 및 안데스 고산 지대 환경이 나타남.</td><td id="QvOu" class="">과거 <strong>남부 유럽(스페인, 포르투갈)의 식민 지배</strong>로 <strong>에스파냐어·포르투갈어</strong>를 쓰며 <strong>가톨릭교</strong>를 믿음.</td><td id="V^QI" class="">• <strong>★[최중요] 인종 융합</strong>: **원주민 + 유럽계 백인 + 아프리카계 흑인 및 혼혈**의 독특한 문화• 유적: 페루의 <strong>마추픽추</strong>(잉카 제국 고산 유적)• 문화: <strong>탱고</strong>(유럽 음악+아프리카 리듬), 브라질 <strong>리우 카니발</strong>(남부 유럽 가톨릭 축제+원주민 전통+흑인 문화의 융합)</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8011-9967-e629ef457824"/></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-8060-bae8-cab8f115fa5a" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2012.png"><img style="width:703.99853515625px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2012.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-8078-bdb8-e0d48083ca7f" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-80f4-b13f-cc4e2e201407"><td id="c_Wk" class=""><strong>북극</strong></td><td id="Luv?" class="">유라시아 및 북아메리카 북부, 그린란드 일대 북극해 연안</td><td id="]fxC" class="">혹독한 <strong>한대(툰드라) 기후</strong>로 인해 농경이 절대 불가능함.</td><td id="[;vY" class="">전통적으로 <strong>순록을 유목</strong>하거나 사냥·수렵 생활을 해옴. 최근 현대 문명 전파로 전통 방식을 버리고 도시로 이주하는 주민 증가.</td><td id="|yND" class="">• 생활: 육류 중심 주식, 동물의 털과 가죽으로 만든 두꺼운 옷과 집(가옥)• 사례: <strong>사미족</strong>(순록 고기를 먹고 피로 철분 보충, 가죽옷 착용)• 변화: <strong>그린란드</strong>(지구 온난화로 여름철 채소 재배 및 천연자원 채굴 가능성 상승)</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8079-9f40-cfb404a74ff2"/></div><div style="display:contents" dir="ltr"><figure id="364fe79a-7d80-80e9-8ada-f8b9fdfc46a2" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2013.png"><img style="width:703.9973754882812px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2013.png"/></a></figure></div><div style="display:contents" dir="ltr"><table id="364fe79a-7d80-80e2-9478-cf3cd03f195b" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="364fe79a-7d80-80cb-96c8-d7bed3487db6"><td id="eVCN" class=""><strong>오세아니아</strong></td><td id="&gt;~E_" class="">오스트레일리아, 뉴질랜드, 태평양의 여러 섬</td><td id=";Ie:" class="">개발이 늦어 <strong>청정한 자연환경</strong>이 보존됨. 넓은 초지를 이용한 대규모 <strong>기업적 목축업</strong> 및 관광 산업이 고도로 발달</td><td id="zkHs" class=""><strong>영국 중심의 유럽 문화 전파</strong>로 다수가 백인이며, <strong>영어</strong>를 쓰고 <strong>개신교</strong> 비중이 높음.</td><td id="NUwC" class="">• 경관: 호주의 <strong>그레이트 오션 로드</strong>(해안 관광지)•<strong> 원주민 문화의 공존</strong>: 호주의 <strong>애버리지니</strong>, 뉴질랜드의 마오리족• 사례: 뉴질랜드의 <strong>하카</strong>(마오리족 전통 춤, 학교에서 교육하며 럭비 국가대표팀이 경기 전 시연)</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-80c4-9742-c0cc7a5729b4"/></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-805d-92ba-e66a533e4588" class="">
+</p></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81bc-92e9-c1ea2be8bef6" class="">🎉 [자료 확인] 문화권의 특징이 고스란히 반영된 세계 4대 축제</h3></div><div style="display:contents" dir="ltr"><figure id="36bfe79a-7d80-803c-8cdd-cc248acef6a0" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2014.png"><img style="width:432px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2014.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="364fe79a-7d80-8152-9fa3-d501d76f644d" class="numbered-list" start="1"><li><strong>🇧🇷 브라질 리우 카니발:</strong> 과거 <strong>[남부 유럽(포르투갈)]</strong>에서 전파된 전통적인 가톨릭 사순절 축제에, 브라질 영토의 원주민 전통 풍습과 아프리카에서 끌려온 노예들의 강렬한 리듬(삼바)이 화려하게 결합되어 탄생한 지구촌 최대의 융합 축제.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="364fe79a-7d80-8131-b351-c1fa11b9b559" class="numbered-list" start="2"><li><strong>🇮🇳 인도의 홀리 축제:</strong> <strong>[힌두교]</strong>의 전통 봄맞이 종교의식에서 출발함. 이날만큼은 엄격한 카스트 신분 계급, 성별, 빈부 격차에 아무런 상관없이 모든 사람이 평등하게 어우러져 서로에게 형형색색의 염료 가루와 물을 뿌리며 기쁨을 만끽함.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="364fe79a-7d80-81e0-88a7-fc43b78505b9" class="numbered-list" start="3"><li><strong>🇹🇭 타이의 송끄란 축제:</strong> 한 해 중 가장 더운 우기 직전 정월 초하루에 열림. 원래 <strong>[불교]</strong>적 축복을 기원하기 위해 불상을 깨끗한 물로 씻겨드리던 의례에서 유래함. 서로에게 물을 아낌없이 뿌리며 다가올 우기에 비가 풍부하게 내려 <strong>[벼농사(농사)]</strong>가 대풍년을 이루기를 간절히 바라는 주술적 의미를 내포함.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="364fe79a-7d80-81c3-9329-e3aead6c4566" class="numbered-list" start="4"><li><strong>🇸🇪 스웨덴의 하지 축제:</strong> 일 년 중 낮의 길이가 가장 길고 햇빛이 강렬한 <strong>[하지(夏至)]</strong>를 전후로 북유럽 지역에서 성대하게 개최되는 축제. 긴 겨울 동안 햇빛을 보지 못했던 자연환경을 극복하고 태양과 풍요에 감사하는 고유 문화가 담겨 있음.</li></ol></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-815c-a859-c36c919f4f6d"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81b2-a8de-e6762341ffda" class="">✏️ [개념 확인 문제풀이 - 1단원]</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81f8-98c0-df2bf4ecfbeb" class=""><strong>1. 다음 빈칸에 들어갈 알맞은 말을 쓰시오.</strong><br/>* (1) 문화권은 자연환경과 인문환경의 요인에 의해 형성된다. <strong>(◯)</strong><br/>* (2) 문화적 특성이 유사하게 나타나 주위의 다른 지역과 구분되는 공간 범위를 <strong>[문화권]</strong>이라고 한다.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8139-8a0f-d4c8ff297508" class=""><strong>2. 다음 설명 중 옳은 것은 ◯표, 틀린 것은 ✕표 하시오.</strong><br/>* (1) 농사에 불리하여 목축업이 주를 이루는 기후 지역에서는 육류와 유제품을 활용한 음식 문화가 발달한다. <strong>(◯)</strong><br/>* (2) <strong>[초원 지역(또는 냉대 기후 지역)]</strong>에서는 가축의 털과 가죽 혹은 풍부한 통나무를 이용하여 집을 짓는 문화가 나타난다. <strong>(◯)</strong></p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81c5-9aaf-d2ee8aa4c7af" class=""><strong>3. 다음 설명에 해당하는 문화권을 &lt;보기&gt;에서 골라 기호를 쓰시오.</strong><br/>&gt; <strong>&lt;보기&gt;</strong> ㉠ 유럽 문화권 ㉡ 북극 문화권 ㉢ 아프리카 문화권 ㉣ 남부 아시아 문화권 ㉤ 라틴 아메리카 문화권<br/>* (1) 카스트 제도의 종교적 율법과 힌두교 문화가 강하게 나타나는 지역: <strong>[ ㉣ 남부 아시아 문화권 ]</strong><br/>* (2) 순록 유목을 하며 가죽옷을 입고 생활하는 한대 기후 지역: <strong>[ ㉡ 북극 문화권 ]</strong><br/>* (3) 원주민, 유럽계, 아프리카계의 혼혈 문화와 가톨릭교가 결합한 지역: <strong>[ ㉤ 라틴 아메리카 문화권 ]</strong></p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81a7-be83-c27979aa94f3" class=""><strong>4. 각 문화권과 그에 관한 올바른 설명을 바르게 선으로 연결하시오.</strong><br/>* (1) 유목 문화권 ─── ㉠ 물과 풀을 찾아 주기적으로 이동 생활을 하며 가축을 기르는 문화가 지배적임.<br/>* (2) 농업 문화권 ─── ㉡ 한 지역에 정착하여 공동체 협동 체제를 구축하고 계절 리듬에 맞춰 축제를 즐김.<br/>* (3) 상공업 문화권 ── ㉢ 고층 빌딩과 산업 시설이 밀집한 도시 경관 내에서 바쁜 일과를 반복함.</p></div><div style="display:contents" dir="auto"><h2 id="364fe79a-7d80-8138-92cb-e67793e75a79" class="">2. 문화 변동과 전통문화 (교과서 88~97쪽)</h2></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81a7-a1f5-c235706db3d8" class="">(1) 문화 변동의 의미와 요인</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8121-bf54-e85e5cb36027" class="bulleted-list"><li style="list-style-type:disc"><strong>문화 변동:</strong> 한 사회의 문화가 새로운 문화 요소의 발명·발견이나 다른 사회의 문화와의 접촉 및 교류를 통해 크게 변화하는 전체 양상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-815f-aff5-ecd564c24510" class="bulleted-list"><li style="list-style-type:disc"><strong>문화 전파:</strong> 인적 교류나 다양한 매개체(인터넷, 미디어 등)를 통해 한 사회의 고유한 문화 요소가 다른 사회로 전달되어 확산하는 현상.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-817f-bbc3-c00e4101d1a2" class="">📦 [자료 확인] 문화 전파의 3대 핵심 유형과 사례</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-819c-9dc2-ff9a51b854aa" class="bulleted-list"><li style="list-style-type:disc"><strong>[자료 1] 직접 전파:</strong> 두 사회의 인적 접촉을 통해 문화 요소가 직접 전달되는 방식.<div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d4-8308-d3363183c019" class="bulleted-list"><li style="list-style-type:circle"><em>사례:</em> 고려 말 원나라에 사신으로 직접 다녀왔던 <strong>문익점</strong>이 붓통에 <strong>목화씨</strong>를 몰래 숨겨 들여와 한반도 전역에 재배함으로써 국민이 솜과 면직물 옷을 지어 입게 된 사건.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-813b-b4c5-d367553ad243" class="bulleted-list"><li style="list-style-type:disc"><strong>[자료 2] 간접 전파:</strong> 인쇄물, 텔레비전, 인터넷, SNS 등 ’물리적 매개체’를 통해 문화가 전달되는 방식.<div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8145-a3d5-db6b3d383a28" class="bulleted-list"><li style="list-style-type:circle"><em>사례:</em> 미국 뉴욕 한복판인 ’타임스 스퀘어’에 모인 외국인들이 한국 웹드라마가 전 세계적 신드롬을 일으키자, 극 중 등장한 <strong>‘딱지치기’나 ’달고나 뽑기’ 같은 한국 전통 놀이 문화</strong>를 인터넷 매체로 접하고 자발적으로 즐기는 현상.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81de-b0ff-f1200c82db97" class="bulleted-list"><li style="list-style-type:disc"><strong>[자료 3] 자극 전파:</strong> 다른 사회의 문화 요소에서 신선한 <strong>[아이디어]</strong>만 얻고, 그것에 자극받아 자기 사회 내부에서 완전히 새로운 문화 요소를 <strong>[발명]</strong>해내는 방식.<div style="display:contents" dir="auto"><ul id="364fe79a-7d80-817a-b4af-caef3c324d95" class="bulleted-list"><li style="list-style-type:circle"><em>사례:</em> 신라 시대 고유의 문장 표기법인 <strong>‘이두(吏讀)’</strong>. 한자라는 외래 문화의 음과 뜻이라는 개념적 아이디어만 빌려와, 우리말의 고유한 어순과 조사 구조에 맞추어 독창적으로 재발명해 낸 문자 체계임.</li></ul></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-80e5-937f-c762743c0ab7" class="bulleted-list"><li style="list-style-type:circle">영어의 알파벳에서 아이디어를 얻어 만든 체로키족 문자</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8197-b1cb-ff99cfd46f18"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-819e-b767-e8832f3f6ebe" class="">(2) 문화 변동의 양상 (문화 접변의 결과)</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d0-8e6b-db10d76b7cff" class="bulleted-list"><li style="list-style-type:disc"><strong>문화 접변:</strong> 서로 다른 문화 체계를 지닌 두 사회가 전쟁, 교역, 이주 등으로 오랫동안 전면적인 접촉을 이어가며 일어나는 대대적인 문화 변동.</li></ul></div><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="364fe79a-7d80-81b1-bcc1-fdc587151aed" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">      [ 문화 접변으로 나타나는 3가지 주요 양상 시각화 ]
+
+1. 문화 병존 (A + B = A, B 공존)    ──▶  [ A ] [ B ]  (각자의 색과 정체성을 유지함)
+2. 문화 융합 (A + B = C 생성)      ──▶  [   C   ]  (새로운 제3의 고유문화 탄생)
+3. 문화 동화 (A + B = B로 흡수)    ──▶  [   B   ]  (기존의 A 문화가 완전히 소멸함)</code></pre></div><div style="display:contents" dir="ltr"><figure id="36bfe79a-7d80-80c9-82fd-f2dd8131f3ba" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2015.png"><img style="width:240px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2015.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="36bfe79a-7d80-8046-b27a-e37732277b55" class="numbered-list" start="1"><li>인도 화폐 문화 병존/ 2. 멕시코 과달루페 성모상 문화 융합 / 3.오스트레일리아 원주민 문화동화</li></ol></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-810d-bd15-c819092c719f" class="">① 문화 병존 (공존)</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c8-a0f9-c905e06d68bb" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 외래 문화가 전파되었음에도 불구하고, 기존의 고유한 문화 요소와 전파된 다른 사회의 문화 요소가 서로 소멸하지 않고 한 사회 내에서 독립적인 정체성을 유지하며 <strong>[나란히 함께 존재하는]</strong> 현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8141-abc9-fe6bb91eab79" class="bulleted-list"><li style="list-style-type:disc"><strong>사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8180-914e-fc98601329f7" class="bulleted-list"><li style="list-style-type:circle">인도 화폐(루피) 표면상에 국가 공용어인 힌디어와 영어뿐만 아니라, 지역별 정체성을 존중하여 헌법이 인정한 <strong>15개의 공용 언어를 한꺼번에 나란히 표기</strong>해 둔 것.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b5-b302-f1e58eed2672" class="bulleted-list"><li style="list-style-type:circle">말레이시아 사회 내에서 이슬람교 사원, 힌두교 사원, 불교 사원 등 다양한 종교 경관과 기념일이 대등하게 공존하는 현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812b-8587-d5479cbc7ef4" class="bulleted-list"><li style="list-style-type:circle">대한민국 의료계 체제에 고유의 <strong>‘한의학’과 서양식 ’양의학’</strong>이 병원에 동시에 존재하며 국민이 선택하여 치료받는 현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-807c-b522-f86c30c41698" class="bulleted-list"><li style="list-style-type:circle">필리핀에서는 고유어인 따갈로어와 영어를 같이 사용한다.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8149-a8fd-c93cfcec57fc" class="bulleted-list"><li style="list-style-type:disc"><strong>의의 및 한계:</strong> 기존 사회가 지닌 전통적 정체성을 완벽히 보존하고 사회의 <strong>[문화 다양성]</strong>을 풍성하게 실현하지만, 집단 간에 특정 문화의 우월성만을 고집할 경우 극심한 갈등의 불씨가 될 수 있음.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8186-acc4-fa6ca4044a13" class="">② 문화 융합</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c3-9fbf-cecb6dc51fee" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 기존의 고유문화 요소와 새롭게 전파된 외래 문화 요소가 유기적으로 <strong>[결합(상호작용)]</strong>하여, 이전의 두 문화와는 성격과 형태가 완전히 구별되는 <strong>제3의 새로운 문화 양식</strong>을 창조해 내는 현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c5-97b7-d7980aeb20f2" class="bulleted-list"><li style="list-style-type:disc"><strong>사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81fa-8190-fe675433ecd7" class="bulleted-list"><li style="list-style-type:circle"><strong>멕시코의 과달루페 성모상:</strong> 16세기 초 유럽의 가톨릭 신앙(에스파냐)이 라틴 아메리카를 지배할 때 전파되었는데, 백인의 모습을 한 기존 성모 마리아상과 달리 멕시코 원주민의 신체 특징인 <strong>‘검은 머리와 갈색 피부’</strong>를 지닌 원주민의 모습으로 성모상이 재탄생함. 유럽의 종교 문화와 원주민의 외형적 정체성이 결합한 대표적 사례.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812b-abf7-d6f72c2ab2d5" class="bulleted-list"><li style="list-style-type:circle"><strong>성공회 강화성당:</strong> 외형과 전체 구조는 전통적인 한국식 <strong>한옥 기와집 양식</strong>을 철저히 따르고 있으나, 내부 공간 배치와 기능은 크리스트교의 전형적인 <strong>바실리카 양식 성당</strong>으로 결합하여 건립된 한국의 기독교 건축물.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8142-a1c5-f143350004fe" class="bulleted-list"><li style="list-style-type:disc"><strong>의의:</strong> 기존 문화가 가진 고유한 <strong>[정체성(뿌리)]</strong>을 완전히 상실하지 않으면서도, 외래 문화를 주체적으로 수용하여 차원이 다른 새로운 문화를 창조하므로 인류의 문화적 다양성을 확장하는 가장 바람직한 수용 태도로 평가됨.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81d5-b494-e88b2ba0c86a" class="">③ 문화 동화</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-815e-b143-fb6c466a638f" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 다른 사회의 강 강력한 문화 요소가 유입되었을 때, 기존에 유지해 오던 고유문화 체계가 외래 문화 체계 속으로 완전히 흡수되거나 외래 문화로 <strong>[대체]</strong>되어 고유의 흔적이 흔적도 없이 사라져 버리는 소멸 현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812f-b592-e2872af8ef6b" class="bulleted-list"><li style="list-style-type:disc"><strong>사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8142-8f1a-f188e1018e29" class="bulleted-list"><li style="list-style-type:circle">18세기 말 영국의 오스트레일리아(호주) 식민 지배 결과, 정부 주도의 원주민 언어 강력 사용 금지 정책과 서구식 강제 교육으로 인해 기존에 존재하던 250여 개 이상의 <strong>오스트레일리아 원주민 고유 언어와 토속 신앙이 대부분 영구 소멸</strong>하고 영어를 일상어로 쓰는 현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8107-af29-d653af8c2a68" class="bulleted-list"><li style="list-style-type:circle">중국 청나라를 건립한 만주족이 한족을 지배하면서 앞머리와 옆머리를 완전히 밀어버리는 <strong>‘변발(辨髮)’</strong> 풍습을 법으로 강요하여, 한족 고유의 두발 문화가 상실되고 변발이 일반적 풍속으로 대체된 사례.</li></ul></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-801b-8d85-f3f3d12662a6" class="bulleted-list"><li style="list-style-type:circle">서양식 의복을 일상복으로 입는 사람들, 특별한 날인 돌잔치에 한복을 입은 아기 : 한복→서양식의복</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8146-a2a1-f092f44c09ec" class="bulleted-list"><li style="list-style-type:disc"><strong>의의 및 한계:</strong> 피지배 사회나 수용 사회의 고유한 <strong>[문화 정체성]</strong>을 철저히 말살하고 상실하게 만들며, 인류 전체의 자산인 문화 다양성의 소중한 가치를 심각하게 훼손한다는 비극적 한계가 있음.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8147-ba6f-ee5a090509b3" class="">③<mark class="highlight-red_background"> 문화 수용 주체의 자발성에 따른 분류 “”중요””</mark></h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8115-b637-c968e02c7c0b" class="bulleted-list"><li style="list-style-type:disc"><strong>[강제적] 문화 접변:</strong> 정복, 식민 지배, 전쟁 등 외부 주체의 강력한 물리적 압박과 강요에 의해 외래 문화가 억지로 이식되는 현상 </li></ul></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-80d5-964c-e7d897f72653" class="bulleted-list"><li style="list-style-type:disc"><strong>사례 :</strong>일제 강점기에 일제는 조선인에게 일본어를 배우고 사용할 것을 강요하여 우리 문화를 말살하려함</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8191-98b5-efb3240ca407" class="bulleted-list"><li style="list-style-type:disc"><strong>[자발적] 문화 접변:</strong> 필요에 의해 다른 사회와 활발히 교역하거나 문화를 주체적으로 수용하면서 자연스럽게 일어나는 변동 </li></ul></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-80c1-83bf-d6553123324a" class="bulleted-list"><li style="list-style-type:disc"><strong>사례: </strong>아메리카 원주민인 나바호족이 에스파냐인과 접촉하면서 은세공 기술을 적극적으로 받아들여 은세공품을 생산함</li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8197-a38d-e7bc771996b3"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81c9-b3b5-f1f601d9e3d9" class="">(3) 전통문화의 의의와 창조적 계승 발전</h3></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-805c-b0dc-d426349c679e" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">전통문화의 사례가 아닌것 “중요”: 조선시대 노비제, 신분제, 여성차별 → 고유한 가치가 없다!!!</mark></li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81af-9930-c662a1d2e3eb" class="">① 전통문화의 의미와 진정한 의의</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8166-bd8c-d736c2be6379" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 한 사회 내에서 매우 오랜 기간 유지 및 전승되면서, 그 사회 구성원들에게 <mark class="highlight-yellow_background">고유한 가치</mark>와 정서로 뚜렷하게 인정받는 문화적 유산.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8103-9eaf-ecdfb6a75901" class="bulleted-list"><li style="list-style-type:disc"><strong>핵심 의의:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8144-a59c-c27a07f296a4" class="bulleted-list"><li style="list-style-type:circle">우리 사회의 얼과 정신이 담겨 있으며, 타문화와 구별되는 독창적인 <strong>[문화 정체성]</strong>을 유지해 주는 든든한 버팀목이 됨.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-811e-86eb-c8b9a1611d02" class="bulleted-list"><li style="list-style-type:circle">구성원들에게 유대감을 제공하여 <strong>[사회 유지와 통합]</strong>에 지대한 공헌을 하며, 지구촌 전체의 <strong>[문화 다양성 증진]</strong>에 크게 이바지함.</li></ul></div><div style="display:contents" dir="ltr"><figure id="36bfe79a-7d80-80f5-868b-d31531cc22a2" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2016.png"><img style="width:2108px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2016.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b8-9889-df4e819fcf81" class="bulleted-list"><li style="list-style-type:circle">사회 구성원 개개인의 문화적 자긍심과 주체성을 고취하고, 국가 브랜드를 드높여 현대 경제 체제에서 <strong>문화 콘텐츠 산업</strong>의 핵심 원동력이 됨.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-818e-a116-d3abd0db3a22" class="">② 전통문화의 [창조적 계승]과 발전 방안</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8154-a337-efd572107ad9" class="bulleted-list"><li style="list-style-type:disc"><strong>방안:</strong> 박물관에 박제된 과거의 유물을 단순히 그대로 보존·유지하는 소극적 태도에서 완전히 벗어나, 전통이 내포한 고유한 미적·정신적 가치를 현대사회의 요구에 맞춰 <strong>[재해석]</strong>하고 새로운 가치를 <strong>[창조]</strong>해 나가야 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81bc-9e32-e5e3f13f1beb" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background"><strong>대한민국 헌법 제9조:</strong></mark><mark class="highlight-yellow_background"> </mark><em><mark class="highlight-yellow_background">“국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다.” </mark></em></li></ul></div><div style="display:contents" dir="auto"><ul id="36bfe79a-7d80-8036-ab55-ff3eed401882" class="bulleted-list"><li style="list-style-type:disc"><em><mark class="highlight-yellow_background">→무조건 의무!!!, </mark></em><em><mark class="highlight-yellow_background"><strong>천명</strong></mark></em></li></ul></div><div style="display:contents" dir="ltr"><figure id="36bfe79a-7d80-8043-9906-c12821b558ca" class="image" style="text-align:left"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2017.png"><img style="width:240px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2017.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81de-b4ec-cd0170845ba7" class="bulleted-list"><li style="list-style-type:disc"><strong>구체적 실천 전략:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d7-a5bd-e954ad15bc54" class="bulleted-list"><li style="list-style-type:circle">전통문화가 현대인들의 트렌드 및 새로운 문화 요소와 아름답게 조화를 이루도록 <strong>[현대적 감각으로 재구성]</strong>해야 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-818c-b66e-fe348003f472" class="bulleted-list"><li style="list-style-type:circle">무조건 우리 것만 최고라는 폐쇄적 태도를 버리고, 전통의 독창성을 굳건히 지키면서도 <strong>[비판적 관점에서 능동적으로 타문화를 수용]</strong>하여 조화를 이루어야 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-815d-a1e6-dfb6e427a8f5" class="bulleted-list"><li style="list-style-type:circle">세계시민으로서 우리 전통문화를 지구촌에 널리 알리는 한편, 다른 사회의 전통문화도 동등하게 존중함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8108-b9a3-c970c18d5382" class="">✨ [사례 확인] 전통문화의 현대화 성공 사례</h3></div><div style="display:contents" dir="ltr"><figure id="36bfe79a-7d80-80f6-9b85-ee9be0640c12" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2018.png"><img style="width:384px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2018.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81f3-acbf-e96439925237" class="bulleted-list"><li style="list-style-type:disc"><strong>🏺 국립박물관의 현대적 팬 상품(굿즈):</strong> 옛 국보인 ’금동 미륵보살 반가사유상’의 형태를 감각적인 파스텔톤 컬러의 미니어처 오브제로 재탄생시키거나, ’청자 상감운학문 매병’의 문양을 본뜬 현대적 스마트폰 케이스, 무선 이어폰 케이스 등을 디자인하여 MZ세대 사이에서 품절 대란을 일으킨 사례.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816c-ab35-f0a078ba2001" class="bulleted-list"><li style="list-style-type:disc"><strong>🎵 밴드 이날치(LEENALCHI)의 &lt;범 내려온다&gt;:</strong> 판소리 ’수궁가’의 고유한 국악 대목을 현대적인 팝, 록, 베이스 리듬과 중독성 있는 현대 무용(앰비규어스 댄스컴퍼니)과 파격적으로 결합하여 유튜브 조회수 수억 회를 기록하며 전 세계에 판소리의 멋을 힙하게 각인시킨 창조적 변용 사례.</li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-813c-a362-d0948f931565"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8140-ac30-f0389ee386cd" class="">✏️ [개념 확인 문제풀이 - 2단원]</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-819d-b4dd-c0632cd2f75c" class=""><strong>1. 다음 빈칸에 들어갈 알맞은 말을 쓰시오.</strong><br/>* (1) 한 사회의 문화가 새로운 문화 요소를 얻거나 다른 사회의 문화와 전면 접촉하며 크게 변화하는 현상을 <strong>[문화 변동]</strong>이라고 한다.<br/>* (2) 발명과 발견은 문화 변동 요인 중 사회 내부에서 비롯되는 <strong>[내재적]</strong> 요인에 해당한다.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8166-a27c-ead6276ed9da" class=""><strong>2. 다음 괄호 안에서 알맞은 말을 골라 표(◯) 하시오.</strong><br/>* (1) 국가 간의 무역과 인적 교류를 통해 문화 요소가 직접 대면하여 전파되는 것은 (<strong>[직접 전파]</strong> / 간접 전파 / 자극 전파)에 해당한다.<br/>* (2) 인터넷과 드라마 미디어가 전 세계로 유행을 퍼뜨려 놀이 문화가 정착된 것은 (직접 전파 / <strong>[간접 전파]</strong> / 자극 전파) 사례이다.<br/>* (3) 신라 시대의 이두 문자처럼 외래문화의 아이디어를 빌려 완전히 새로운 발명을 이룬 것은 (간접 전파 / <strong>[자극 전파]</strong>)에 해당한다.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-818a-9552-d33b986d4dc9" class=""><strong>3. 문화 변동의 세 가지 양상을 올바른 사례 및 정의와 바르게 연결하시오.</strong><br/>* (1) 문화 병존 ─── ㉠ 기존의 문화 요소와 전파된 외래 문화 요소가 융합되지 않고 한 사회 내에서 나란히 공존함.<br/>* (2) 문화 융합 ─── ㉡ 두 문화가 결합하여 성격이 완전히 달라진 제3의 독창적인 새로운 문화를 만들어 냄.<br/>* (3) 문화 동화 ─── ㉢ 고유문화가 외래문화 체계 속으로 완전히 강제 흡수되거나 대체되어 본래 색깔을 잃고 소멸함.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-815c-81a7-ce342e7096fd" class=""><strong>4. 다음 전통문화와 관련된 빈칸을 채우시오.</strong><br/>* (1) 한 사회에서 오랜 세월 전승되면서 고유한 가치로 공인받은 문화를 <strong>[전통문화]</strong>라고 한다.<br/>* (2) 우리 문화에 속한 구성원들이 지니는 동질적 연대감이자 타문화와 구별되는 고유한 인식을 <strong>[문화 정체성]</strong>이라고 한다.</p></div><div style="display:contents" dir="auto"><h2 id="364fe79a-7d80-81dd-8394-dc47d7f8f7c9" class="">3. 문화 상대주의와 보편 윤리 (교과서 98~105쪽)</h2></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8116-92e1-c62d5b1e0e42" class=""><strong>[학습 목표]</strong><br/>* 문화적 차이에 대한 문화 상대주의적 태도의 필연적 필요성을 깊이 이해한다.<br/>* 인류 공통의 보편 윤리 차원에서 자문화와 타문화를 객관적으로 성찰할 수 있다.</p></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8167-a88e-f52d4288d0a6"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-819a-8464-e85a802a9475" class="">1. 문화 상대주의적 태도의 필요성</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-818f-9f8c-c7e053c2a7a1" class="">(1) 문화적 차이가 발생하는 이유</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81b1-ae82-dc34efe1549d" class="">인간 집단이 자신들이 처한 서로 다른 <strong>자연환경(기후, 지형)</strong> 및 <strong>인문환경(역사, 종교)</strong>에 생존을 위해 지혜롭게 적응하며 삶의 방식을 다르게 설계하기 때문입니다.</p></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81ba-909f-e26d12dd0014" class="bulleted-list"><li style="list-style-type:disc"><strong>🏔️ 자연환경 영향 사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812b-be81-efea0f27432c" class="bulleted-list"><li style="list-style-type:circle"><strong>스위스:</strong> 국토 대부분이 척박한 고산 산지 지대이고 여름 기후가 매우 서늘함 ──▶ 농경에 극히 불리하므로 고산 <strong>[목축업]</strong>이 극도로 발달함 ──▶ 오랜 보존이 가능한 유제품을 가공한 <strong>치즈 요리(퐁뒤 등)</strong>가 발달함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8182-a94d-defe0a820d11" class="bulleted-list"><li style="list-style-type:circle"><strong>일본:</strong> 사방이 바다로 둘러싸인 섬나라이며 여름철 아시아 <strong>[계절풍]</strong>의 강력한 영향권에 들어 강수량이 대단히 풍부함 ──▶ 수산업과 벼농사가 동시에 비약적으로 발달함 ──▶ 신선한 <strong>해산물(생선초밥)과 쌀</strong>을 적극 활용한 요리 문화 정착.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8187-9a02-f87611ee0ab7" class="bulleted-list"><li style="list-style-type:disc"><strong>🕌 인문환경(종교) 영향 사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c4-a7e4-fe35b2caee4e" class="bulleted-list"><li style="list-style-type:circle"><strong>서남아시아(중동):</strong> 이슬람교의 교리 및 성전 쿠란의 엄격한 가르침에 따라 <strong>돼지고기 섭취를 절대적으로 금지</strong>함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b4-b942-d3193be48768" class="bulleted-list"><li style="list-style-type:circle"><strong>남태평양 원주민 섬 부족:</strong> 기온과 습도가 돼지가 무럭무럭 자라기에 완벽한 자연환경을 갖춤. 돼지를 가문의 부의 척도이자 신성한 동물로 극진히 여기며, <strong>결혼식 등 부족의 가장 중대한 공동체 행사 때 돼지고기를 나누어 먹는</strong> 핵심 문화가 정착함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8164-acc7-f16cb1dccfed"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8170-8de9-f488e90708b4" class="">(2) 문화적 차이를 대하는 왜곡된 태도: 문화 절대주의</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-813a-ae3c-fa336c3d8cdd" class="">문화를 평가하는 데 있어서 시공간을 초월하는 하나의 <strong>절대적인 단일 기준</strong>이 존재한다고 맹신하고, 그 기준에 맞추어 문화의 우열(등급)을 가를 수 있다고 확신하는 오만한 태도입니다.</p></div><div style="display:contents" dir="auto"><p id="36cfe79a-7d80-805b-aeac-c8633d48eb44" class=""><mark class="highlight-purple_background"><strong>*** 문화 절대주의는 무조건 나쁜게 아니다</strong></mark></p></div><div style="display:contents" dir="auto"><p id="36cfe79a-7d80-80e7-9c55-f372608cd374" class=""><mark class="highlight-purple_background">자문화 중심주의 → 장점 : 민족 융합</mark></p></div><div style="display:contents" dir="auto"><p id="36cfe79a-7d80-80ba-8add-f5e56c36fa6e" class=""><mark class="highlight-purple_background">문화 사대주의 → 장점 : 다른나라 수용 → 발전</mark></p></div><div style="display:contents" dir="auto"><pre id="364fe79a-7d80-816c-9964-c3f6131eceb0" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">              [ 문화 절대주의의 두 가지 일탈적 양상 ]
+
+       자문화 중심주의                      문화 사대주의
+&quot;우리 것만 위대하고 최고다!&quot;           &quot;외국의 것은 무조건 고상하고,
+ 타문화는 미개하다고 차별함.            우리 문화는 열등하고 부끄럽다.&quot;
+       (결과: 국수주의)                   (결과: 정체성 말살)</code></pre></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-816c-974d-e9dc606757ec" class="">① 자문화 중심주의<br/></h3></div><div style="display:contents" dir="ltr"><figure id="36cfe79a-7d80-8071-8b87-cf2d3bd9544c" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2019.png"><img style="width:703.984375px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2019.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-818e-b2ca-e3391f5b7d5d" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 자기 집단의 고유한 문화만을 가장 우월하고 가치 있는 것으로 선언하고, 타 집단의 문화는 저급하고 미개한 것으로 여겨 철저히 무시하고 부정적으로 평가하는 비뚤어진 태도.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81bc-8598-cda68743aa17" class="bulleted-list"><li style="list-style-type:disc"><strong>치명적 한계:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8107-9582-c208d4d9f9fa" class="bulleted-list"><li style="list-style-type:circle">타문화에 대한 맹목적인 차별과 혐오를 조장하여 국가 간·민족 간 극심한 갈등과 전쟁을 유발함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-817e-a22a-ff40318785f7" class="bulleted-list"><li style="list-style-type:circle">자기 문화만이 최고라고 닫혀 있으므로 <strong>[국수주의]</strong>로 전락하여 다른 문화의 장점을 배우지 못해 문화의 질적 발전을 저해함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8119-8a71-ede561985d63" class="bulleted-list"><li style="list-style-type:circle">강대국의 지배 논리와 결합할 경우, 약소국에 자신들의 문화를 무력과 자본으로 강제 주입하려는 비극적인 <strong>문화 제국주의</strong>로 변질함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="36cfe79a-7d80-8027-accf-cb5d14102ebb" class=""><mark class="highlight-yellow_background"><strong>국수주의 : 자기 민족이나 국가의 문화만을 우수한 것으로 믿고 고수하며 다른 민족이나 국가의 문화를 </strong></mark><em><mark class="highlight-yellow_background"><strong><span style="border-bottom:0.05em solid">배척</span></strong></mark></em><mark class="highlight-yellow_background"><strong>하는 태도</strong></mark></p></div><div style="display:contents" dir="auto"><p id="36cfe79a-7d80-806d-b370-d60bb9d27a3a" class=""><mark class="highlight-yellow_background"><strong>문화 제국주의 : 자기 문화의 우월성만을 강조하면서 자신의 문화를 다른 문화에 </strong></mark><em><mark class="highlight-yellow_background"><strong><span style="border-bottom:0.05em solid">강요</span></strong></mark></em><mark class="highlight-yellow_background"><strong>하는것</strong></mark></p></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8117-adeb-e3c84663b739" class="bulleted-list"><li style="list-style-type:disc"><strong>📖 역사적 사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81cb-83d3-ea949634c068" class="bulleted-list"><li style="list-style-type:circle"><strong>중국의 중화사상(中華思想):</strong> 중국 한족이 자신들이 세계 지리적·문화적으로 우주의 완벽한 ‘중앙(中)’이며, 자신들의 문화(’화[華]’)만이 유일하게 고상하고 주변 민족은 동이, 서융, 남만, 북적이라 부르며 미개한 오랑캐로 여긴 사상. 명나라 초기에 제작된 세계지도 <strong>‘대명혼일도(大明混一圖)’</strong>를 보면 중국 대륙을 지도 정중앙에 기괴할 정도로 거대하게 그리고, 유럽, 아프리카, 아시아 주변국은 변방에 작게 축소 배치하여 자문화 중심주의의 극치를 보여줌.<strong> </strong></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8176-a8f9-ccc177b6d5e0" class="bulleted-list"><li style="list-style-type:circle"><strong>아마존 자파테크족 선교 사례:</strong> 아마존 강 유역에서 기온과 습도가 매우 높은 자연환경에 완벽히 적응하여 옷을 입지 않는 나체 상태로 평화롭게 살아가던 자파테크족에게 서구 크리스트교 선교사들이 찾아옴. 선교사들은 자신들의 서구식 의복 문화 기준만 절대적이라 여겨 원주민의 나체를 ’미개하고 죄악시되는 것’으로 규정하고 <span style="border-bottom:0.05em solid">강제로 서구식 옷을 입힘</span>. 그 결과, 통풍이 안 되는 아마존의 고온다습한 기후로 인해 원주민 대부분이 심각한 피부병에 걸려 고통받음.<mark class="highlight-red_background"><strong> → 문화 제국주의(강요)</strong></mark></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81f1-880a-f80a0ec983b1" class="">② 문화 사대주의</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816b-9339-e6fe17604f24" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 다른 사회나 강대국의 문화만을 절대적으로 <span style="border-bottom:0.05em solid">동경하고 숭상</span>하는 반면, 자신이 속한 사회의 고유문화는 지극히 <em><span style="border-bottom:0.05em solid">미개하고 열등한 가치 없는 것</span></em><span style="border-bottom:0.05em solid">으로 비하하며 스스로를 깎아내리는 태도</span>.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8170-b983-eb211588be3b" class="bulleted-list"><li style="list-style-type:disc"><strong>치명적 한계:</strong> 자기 문화가 가진 고유한 <strong>[문화적 정체성과 자부심을 상실]</strong>하게 만들며, <span style="border-bottom:0.05em solid">주체성 없이 </span>외래문화에 사회 전체가 정신적으로 종속되는 결과를 초래함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d2-9317-cb0e418a8ece" class="bulleted-list"><li style="list-style-type:disc"><strong>📖 일상적 사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8185-9728-d9cf0b7cbcc1" class="bulleted-list"><li style="list-style-type:circle"><strong>조선 시대 일부 지배층이 한글(훈민정음)을 ‘암클’, ’언문’이라 부르며 천시하고 중국의 한자만을 진정한 고상한 문자로 여기며 한학만을 숭상했던 태도.</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-818a-be93-c95470990e9d" class="bulleted-list"><li style="list-style-type:circle"><strong>현대 도시의 무분별한 영어 간판 남발:</strong> 대한민국 도심 번화가에 한글 표기는 단 한 글자도 없이 아파트 관리사무소를 <code>Management office</code>, 동네 경로당을 <code>Senior club</code>으로만 명명하거나 일상용품 포장에 영어만 표기하는 현상. 영어를 써야만 고급스럽고 세련되었다는 맹목적 편견에서 비롯된 명백한 <strong>[문화 사대주의]</strong>의 단면임.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8148-a0dd-ddb5bf6f1102"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8164-8514-dd55f9404b2e" class="">(3) 올바른 대안적 태도: 문화 상대주의 (Culture Relativism)</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816f-aef4-dadadd9c800e" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 지구상의 각 문화는 그것이 형성된 고유한 자연환경과 역사적·종교적 상황 등 구체적인 <strong>[문화적 배경]</strong> 속에서 그 나름의 가치와 타당성을 지니고 있음을 인정하고, 문화 간에 절대적인 우열의 등급을 매기지 않는 태도.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812a-98eb-fc30b1c556a9" class="bulleted-list"><li style="list-style-type:disc"><strong>주요 특징:</strong> 문화가 가진 다양성과 각 사회가 가진 역사적 <strong>특수성</strong>을 있는 그대로 존중함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-817c-9b82-ce5c3472ee7d" class="bulleted-list"><li style="list-style-type:disc"><strong>절실한 필요성:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-815e-8713-d9a75d681987" class="bulleted-list"><li style="list-style-type:circle">인류 사회 전체에 만연한 문화적 편견과 고정관념을 완벽히 타파하여 불필요한 사회적 갈등을 미연에 예방함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816c-888c-e6a909002164" class="bulleted-list"><li style="list-style-type:circle">타문화를 있는 그대로 <strong>[편견 없이 깊이 이해]</strong>할 수 있는 안목을 열어줌.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8131-aa47-f15282602edf" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-purple_background"><strong>타문화라는 거울에 우리 문화를 비추어 봄으로써 </strong></mark><mark class="highlight-purple_background"><strong><span style="border-bottom:0.05em solid">우리 문화가 가진 매력과 가치를 [객관적으로 새롭게 발견]하게 해 줌.</span></strong></mark></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8148-b44e-d2b3e563ffd5" class="bulleted-list"><li style="list-style-type:circle">궁극적으로 지구촌 내 다양한 문화의 평화적 공존을 가능케 함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-818c-973e-e6e75eb78324"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81a1-b5fc-eec9151db7dd" class="">⚰️ [자료 확인] 자연과 종교 배경이 낳은 세계의 다채로운 장례 문화</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a1-a8ca-f287d94212e0" class="bulleted-list"><li style="list-style-type:disc"><strong>[자료 1] 티베트의 천장(天葬) / 조장(鳥葬):</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a3-8f8c-c14394db0871" class="bulleted-list"><li style="list-style-type:circle"><em>현상:</em> 시신을 정성껏 손질하여 높은 바위산에 올려두고 하늘의 새인 독수리에게 보시(대접)하여 쪼아 먹게 하는 장례 방식.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-812f-9661-c78e89190acb" class="bulleted-list"><li style="list-style-type:circle"><em>배경 원인:</em> 히말라야 고원지대라는 척박한 자연환경으로 인해 땅이 일 년 내내 꽁꽁 얼어붙어 있어 땅을 깊게 파서 묻는 ’매장’이 물리적으로 불가능함. 또한, 나무가 거의 자라지 않아 불로 태우는 ’화장’도 원천적으로 불가능함. 결정적으로 주민 대부분이 불교의 <strong>윤회 사상</strong>을 믿기 때문에, 영혼이 떠나버린 인간의 껍데기일 뿐인 육신을 굶주린 독수리에게 보시함으로써 이승에서의 마지막 빚을 갚고 영혼의 평화로운 환생을 돕는다는 숭고한 종교적 가치관이 결합하여 형성됨.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8197-87f8-d7b5b7ee81dc" class="bulleted-list"><li style="list-style-type:disc"><strong>[자료 2] 아프리카 가나의 축제형 장례식:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8143-8579-c1a1c137b2b0" class="bulleted-list"><li style="list-style-type:circle"><em>현상:</em> 장례식 날 온 동네 주민들이 모여 눈물을 흘리는 대신 화려한 춤을 추고 노래를 부르며, 고인이 살아생전 좋아했거나 열망했던 모양(예: 알록달록한 자동차 모양, 물고기 모양, 비행기 모양 등)으로 세상에 단 하나뿐인 독특한 이색 관을 제작해 축제처럼 치름.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81ab-8bbf-d7e7d75ba1ca" class="bulleted-list"><li style="list-style-type:circle"><em>배경 원인:</em> 가나의 토착 종교적 세계관에 따르면, 인간의 죽음은 영구적인 소멸이나 슬픔이 아니라, 먼저 떠나간 조상님들이 계시는 영광스럽고 아름다운 신세계로 긴 여행을 떠나는 희망찬 출발점이라고 굳게 믿기 때문임. 고인의 멋진 여행길을 배웅하고 그가 남긴 삶의 흔적을 다 함께 축하하고 추억하려는 가치관의 산물임.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c9-9dd9-f21eb795f50e" class="bulleted-list"><li style="list-style-type:disc"><strong>💡 결론:</strong> 만약 이 두 장례 문화를 서구식이나 한국식 장례 기준(단일 기준)으로만 재단하면 미개하거나 기괴한 문화로 오해하기 쉬우므로, 반드시 그들의 자연·인문환경을 배려하는 <strong>[문화 상대주의적 태도]</strong>로 바라보아야만 본질적 형성 배경을 올바르게 이해할 수 있음.</li></ul></div><div style="display:contents" dir="auto"><hr id="36cfe79a-7d80-80de-8436-db6fd315b3a2"/></div><div style="display:contents" dir="auto"><h3 id="36cfe79a-7d80-80f8-a1d2-ff15123a32d2" class="">[자료 확인] 환경과 가치관이 낳은 세계의 다채로운 결혼 문화</h3></div><div style="display:contents" dir="auto"><h3 id="36cfe79a-7d80-80ac-90ee-c8801459f4eb" class="">[자료 1] 독일의 폴터아벤트(Polterabend)</h3></div><div style="display:contents" dir="auto"><ul id="36cfe79a-7d80-80e1-a29e-d731d7203d72" class="bulleted-list"><li style="list-style-type:disc"><strong>현상:</strong> 결혼식 전날 밤, 신혼부부의 집 앞에 친지와 친구들이 모여 각자 집에서 가져온 오래된 접시나 도자기를 던져 소란스럽게 깨뜨리는 풍습.</li></ul></div><div style="display:contents" dir="auto"><ul id="36cfe79a-7d80-807b-9754-d4849b99bcbc" class="bulleted-list"><li style="list-style-type:disc"><strong>배경 원인:</strong> &quot;깨진 접시가 행운을 가져다준다(Scherben bringen Glück)&quot;는 독일의 오래된 민간 신앙에서 비롯됨. 접시가 깨질 때 나는 날카롭고 시끄러운 소음이 새 출발을 앞둔 신혼부부에게 다가오는 <strong>액운과 악귀를 쫓아낸다</strong>고 믿음. 또한, 깨진 파편을 신랑과 신부가 힘을 합쳐 함께 치우도록 함으로써 앞으로 부부가 마주할 <strong>인생의 고난을 공동의 노력으로 극복해 나간다</strong>는 부부간의 결속과 협력의 메시지가 담겨 있음.</li></ul></div><div style="display:contents" dir="auto"><h3 id="36cfe79a-7d80-8040-8947-f6bad62cde4a" class="">[자료 2] 나이지리아 요루바족의 전통 결혼식</h3></div><div style="display:contents" dir="auto"><ul id="36cfe79a-7d80-80c2-b5b6-d2f56d5c8fdc" class="bulleted-list"><li style="list-style-type:disc"><strong>현상:</strong> 신랑과 가족들이 전통 직물로 만든 예복인 ‘아소 오케(Aso oke)’를 입고 신부의 집을 방문하며, 신부는 시댁에 도착해 물로 발을 씻은 후 주술적 의미를 지닌 호리병(박공예품)을 밟아 깨뜨리는 의식.</li></ul></div><div style="display:contents" dir="auto"><ul id="36cfe79a-7d80-801c-818a-cd57bf878da0" class="bulleted-list"><li style="list-style-type:disc"><strong>배경 원인:</strong> 아프리카의 고온건조한 기후와 척박한 토양에서 귀하게 자라는 호리병박은 요루바족에게 &#x27;풍요&#x27;와 &#x27;가정의 보호&#x27;를 상징함. 동시에 이들의 토착 종교적 세계관에 따르면, 결혼이라는 큰 변화의 시기에는 질투하는 잡귀들이 신부를 따라와 가정에 불행을 불어넣을 수 있다고 믿음. 따라서 호리병을 깨뜨려 <strong>신부에게 붙어온 부정적인 기운과 잡귀를 완벽히 차단</strong>하고, 깨끗이 씻은 발로 시댁의 문턱을 넘음으로써 <strong>새로운 가문에 순결하고 복된 기운만을 들인다</strong>는 종교적 가치관이 결합하여 형성됨.</li></ul></div><div style="display:contents" dir="auto"><blockquote id="36cfe79a-7d80-8005-be9a-e8292a7849bc" class="">💡 <strong>교과서 서술형 대비 팁</strong><br/>이 자료들을 서술할 때 핵심 키워드는 **&quot;문화 상대주의&quot;**입니다. 겉보기에는 무조건 물건을 깨뜨리는 이상한 행동처럼 보이지만, 그 이면에는 <strong>&#x27;액운을 막고 부부의 행복을 빌어주는&#x27; 각 사회만의 합리적인 이유와 배경</strong>이 있음을 서술하는 것이 포인트입니다.</blockquote></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8152-b28a-d2d069a6434b"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81cc-819e-f26f20593524" class="">2. 보편 윤리 차원의 문화 성찰</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81ec-84a5-cb1073598ebf" class="">(1) 극단적 문화 상대주의의 치명적 한계와 오류</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8143-8c99-db6a4b83545d" class="bulleted-list"><li style="list-style-type:disc"><strong>의미:</strong> 문화 상대주의를 아무런 브레이크 없이 과도하게 적용하여, 인류가 보편적으로 수호해야 할 근본 가치인 <strong>‘인간의 존엄성, 신체의 자유, 생명권, 인권’</strong>을 심각하게 난도질하고 훼손하는 반인륜적 행위마저도 “그 사회만의 고유한 문화적 특수성이므로 절대 간섭하지 말고 존중해야 한다”라고 억지 주장하는 극단적 오류.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81fa-a6e6-c05f7d150ab0" class="bulleted-list"><li style="list-style-type:disc"><strong>절대 인정될 수 없는 반인륜적 문화 사례:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81ca-b989-d22d26a44daa" class="bulleted-list"><li style="list-style-type:circle"><strong>명예살인:</strong> 집안의 명예를 더럽혔다는 자의적인 이유로 가족 구성원들이 여성 가족원을 사적으로 잔인하게 살해하는 중동 일부 지역의 관습.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b9-ae2b-cdf6ce9cecc8" class="bulleted-list"><li style="list-style-type:circle"><strong>식인 풍습:</strong> 과거 일부 부족에서 나타난 인간의 살을 먹는 관습.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b0-95c9-cacfc307bf9f" class="bulleted-list"><li style="list-style-type:circle"><strong>여성 성기 절제술(FGM):</strong> 여성의 신체를 훼손하여 고통을 주는 인권 침해 풍습.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81ec-b4cb-f867dff96c1b" class="bulleted-list"><li style="list-style-type:circle"><strong>전족(纏足):</strong> 과거 중국에서 여성의 발을 인위적으로 자라지 못하게 꽁꽁 싸매어 기형으로 만들었던 풍습.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-818d-b3f4-e13bac55f559" class="bulleted-list"><li style="list-style-type:disc"><strong>💡 성찰의 기준:</strong> 각 문화의 특수성을 존중하는 것은 대단히 중요하지만, 그것은 어디까지나 인류 전체가 시공간을 초월하여 반드시 지켜야 할 최소한의 도덕적 기준인 <strong>[보편 윤리]</strong>를 침해하지 않는 범위 내에서만 정당성을 인정받을 수 있음.</li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81fa-824d-d5b80746a54b"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-811c-b1c8-f310a3ec339d" class=""><mark class="highlight-purple_background">🕊️ [자료 확인] 인류 공통의 가치: 세계 6대 종교의 ‘황금률(Golden Rule)’ **중요</mark></h3></div><div style="display:contents" dir="auto"><p id="379fe79a-7d80-804d-a7d7-d646607cd1b7" class="">황금률이 강조하는 것은 <strong>인간에 대한 사랑과 </strong><mark class="highlight-yellow_background"><strong>자기 초월 또는 공감의 가치</strong></mark><strong>와</strong> 같은 보편 윤리<br/>이다. 다양한 종교는<mark class="highlight-purple_background"><strong> </strong></mark><mark class="highlight-yellow_background"><strong>비폭력에 기초</strong></mark>하여 인간 사회의 폭력과 갈등의 문제를 해결하고자 하였<br/>다. 이들은 인간 존엄성에 대한 훼손을 일으키는 폭력과 갈등의 원인으로 작용하는 자기중심<br/>주의와 타인에 대한 적대심을 억제하기 위해서 황금률을 강조하였다. 이러한 황금률은 인류<br/>애를 중시하는 공감의 윤리로서 숭고한 도덕이자 종교적 신념으로 지켜졌다.</p></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8191-bc68-e9c4017b7c58" class="bulleted-list"><li style="list-style-type:disc"><strong>☸️ 불교:</strong> <em>“어떤 일로 고통받은 적이 있다면, 그 방식으로 남에게 상처를 주지 마라.”</em></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8199-a595-ce9a6bf6a8ca" class="bulleted-list"><li style="list-style-type:disc"><strong>✝️ 크리스트교:</strong> <em>“남이 너에게 해 주기를 바라는 대로, 너도 다른 사람을 대하라.”</em></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81f5-9ffb-f5187a32c251" class="bulleted-list"><li style="list-style-type:disc"><strong>☪️ 이슬람교:</strong> <em>“나를 위하는 만큼 남을 위하지 않는 사람은 진정한 신앙인이 아니다.”</em></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81be-b25e-f9209a366d1d" class="bulleted-list"><li style="list-style-type:disc"><strong>🕉️ 힌두교:</strong> <em>“너에게 고통스러운 일을 다른 사람에게 결코 강요하지 마라.”</em></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8174-830a-c7ba68d454e4" class="bulleted-list"><li style="list-style-type:disc"><strong>✡️ 유대교:</strong> <em>“너에게 해로운 일을 네 이웃에게 행하지 마라.”</em></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d0-9082-e4b448a3c8f6" class="bulleted-list"><li style="list-style-type:disc"><strong>☯️ 유교:</strong> <em>“네가 원하지 않는 바를 남에게 행하지 마라 : 기소불욕 물시어인(己所不欲 勿施於人).”</em></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8150-8421-daea8ee926cd"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81c1-81bb-d3140d6ece11" class="">(2) 보편 윤리 차원에서의 문화 성찰 (자문화와 타문화)</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81da-b66f-d9a5c636bf1e" class="">① 보편 윤리 차원에서의 자문화(우리 문화) 성찰</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8173-89b6-eb2a7253f2bf" class="">우리 사회에 깊숙이 뿌리내린 전통 관습이라 할지라도, 인권과 정의라는 보편 윤리 관점에서 부단히 비판적으로 성찰해야 합니다.</p></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81cc-8a1a-e38ad235499f" class="bulleted-list"><li style="list-style-type:disc"><strong>🤝 연고주의(緣故主義):</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d9-a67b-c5385d53e7a8" class="bulleted-list"><li style="list-style-type:circle"><em>의미:</em> 혈연(가족 관계), 지연(고향 출신), 학연(출신 학교)이라는 개인적인 귀속적 전통 사회관계를 공적인 영역보다 최우선시하여 챙기는 사고방식 및 사회현상.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8117-b024-f051112d3a2d" class="bulleted-list"><li style="list-style-type:circle"><em>긍정적 측면:</em> 끈끈한 소속감과 정서적 안정감, 끈끈한 네트워크 결속력을 강화함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816b-8601-e0d5621dbcc7" class="bulleted-list"><li style="list-style-type:circle"><em>부정적 측면:</em> 공정한 입학, 투명한 채용, 공평한 인사 평가 과정에서 개인의 실제 능력과 자질보다 개인적 인맥 배경을 우선시하여 능력 있는 타인의 <strong>공정한 기회를 무참히 박탈</strong>함. 이는 정의와 평등이라는 엄격한 <strong>보편 윤리에 정면으로 위배</strong>되므로 반드시 청산해야 할 병폐임.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81fc-83ec-d6c94a255d28" class="bulleted-list"><li style="list-style-type:disc"><strong>👑 지나친 권위주의(權威主義):</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8115-8c0b-e852246b7f9f" class="bulleted-list"><li style="list-style-type:circle"><em>원인 및 문제점:</em> 과거 우리 사회의 유교적 가부장제 가치관이 왜곡되어 전통에 잔존한 형태. 나이, 지위, 성별을 빌미로 아랫사람에게 무조건적인 순종을 강요함. 이는 사회 구성원 간의 동등하고 평등한 인격적 관계 형성을 원천 봉쇄하고, 언론의 자유와 <strong>인권을 심각하게 침해</strong>하는 문제를 낳음.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8114-9549-ec726749e265" class="">② 보편 윤리 차원에서의 타문화 성찰</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81f5-ae28-f2d03b7c10b1" class="bulleted-list"><li style="list-style-type:disc"><strong>💰 인도의 결혼 지참금(다우디, Dowry) 문화:</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a5-a441-e3c93b851865" class="bulleted-list"><li style="list-style-type:disc"><em>내용:</em> 인도의 오랜 결혼 관습으로, 혼인할 때 신부 측 가문에서 신랑 측 가문에게 막대한 액수의 현금이나 고급 현물을 의무적으로 상납해야 하는 문화.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-810e-96fa-c6c16192bd0c" class="bulleted-list"><li style="list-style-type:disc"><em>문제점:</em> 지참금 액수가 신랑 측의 기대치에 미치지 못한다는 터무니없는 이유로 신부에 대한 끔찍한 가정 폭력이 일상화되거나, 심지어 신부의 생명을 고의로 해치는 반인륜적 범죄(방화, 살인)가 빈번히 발생함. 이는 인간의 존엄성과 <strong>생명 존중이라는 인류 공통의 보편 윤리 차원에서 반드시 근절되어야 하며, 문화 상대주의라는 이름으로 결코 용인될 수 없는 명백한 비판의 대상</strong>임.</li></ul></div><div style="display:contents" dir="ltr"><table id="379fe79a-7d80-80b3-ac35-e80900ab13b6" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="379fe79a-7d80-80b4-9b22-e5822a69cb05"><th id="mowB" class="simple-table-header-color simple-table-header"><strong>구분</strong></th><th id="Ql|y" class="simple-table-header-color simple-table-header"><strong>문화 형성 배경</strong></th><th id="kklP" class="simple-table-header-color simple-table-header"><strong>문화 상대주의 관점에서의 평가</strong></th><th id="YcLh" class="simple-table-header-color simple-table-header"><strong>보편 윤리 관점에서의 평가</strong></th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="379fe79a-7d80-8074-a1b1-c04e3fb68971"><td id="mowB" class="">자료 ①</td><td id="Ql|y" class="">토착 종교의 영향과 사람들의 가치관</td><td id="kklP" class=""><mark class="highlight-blue_background">고유한 종교적 배경에 따라 형성된 문화이므로 </mark><mark class="highlight-blue_background"><strong>존중해야 한다.</strong></mark></td><td id="YcLh" class=""><mark class="highlight-blue_background">인간 존엄성, 생명 존중 등의 도덕적 가치를 침해하지 않고 고인에 대한 존중과 애정을 보이는 장례 문화이므로 보편 윤리에 어긋나지 않는다.</mark></td></tr></div><div style="display:contents" dir="ltr"><tr id="379fe79a-7d80-8080-b14e-c3245f7f3a89"><td id="mowB" class="">자료 ②</td><td id="Ql|y" class="">식민 지배의 영향 및 엄격한 치안 유지 효과 (싱가포르 태형)</td><td id="kklP" class=""><mark class="highlight-red_background">과거 서구 열강의 식민 지배 때문에 생긴 형벌로, 이를 그대로 인정하게 된다면</mark><mark class="highlight-red_background"><strong> 극단적 문화 상대주의</strong></mark><mark class="highlight-red_background">에 빠질 수 있다.</mark></td><td id="YcLh" class=""><mark class="highlight-red_background">신체에 직접 고통을 주는 잔인한 형벌이므로 보편 윤리 관점에서 수용할 수 없다.</mark></td></tr></div><div style="display:contents" dir="ltr"><tr id="379fe79a-7d80-80ee-970f-c8d584b23a99"><td id="mowB" class="">자료 ③</td><td id="Ql|y" class="">정화하면 동물이 건강해진다는 종교적 믿음 (성 안토니오 축복)</td><td id="kklP" class=""><mark class="highlight-red_background"><strong>종교적 믿음으로 문화 형성의 배경을 이해할 수는 있으나, 무조건 인정하게 된다면 극단적 문화 상대주의에 빠질 수 있다.</strong></mark></td><td id="YcLh" class=""><mark class="highlight-red_background">동물 학대로 볼 수 있으므로 보편 윤리 관점에서 바람직하다고 할 수 없다.</mark></td></tr></div><div style="display:contents" dir="ltr"><tr id="379fe79a-7d80-8062-b0a3-e95d3fc54c5e"><td id="mowB" class="">자료 ④</td><td id="Ql|y" class="">아마존 자연환경과 담력·체력을 증명해야 하는 관습 (성인식)</td><td id="kklP" class=""><mark class="highlight-red_background">성인식 과정에서 고통을 유발하는 문화를 인정하면 극단적 문화 상대주의로 빠질 수 있다.</mark></td><td id="YcLh" class=""><mark class="highlight-red_background">사테레마웨족의 성인식은 신체에 직접 고통을 주기 때문에 보편 윤리 관점에서 바람직한 문화라고 할 수 없다.</mark></td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><figure id="379fe79a-7d80-800e-a0b3-f944953766da" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2020.png"><img style="width:703.99853515625px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2020.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="379fe79a-7d80-80c5-81ed-eb9490a014b1" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2021.png"><img style="width:703.991455078125px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2021.png"/></a></figure></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8176-b15b-f571dc5c0a66"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-815b-971f-cce0143da161" class="">✏️ [개념 확인 문제풀이 - 3단원]</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81ff-8fe3-c30a7f6aa979" class=""><strong>1. 다음 설명이 맞으면 ◯표, 틀린 것은 ✕표 하시오.</strong><br/>* (1) 자문화 중심주의는 자기 집단의 문화만을 가장 우월하다고 확신하며 타문화를 멸시하는 태도이다. <strong>(◯)</strong><br/>* (2) 문화 사대주의는 다른 문화권의 요소를 맹목적으로 동경하여 수용하고, 자기 문화를 열등하게 바라보는 왜곡된 태도이다. <strong>(◯)</strong></p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-813a-b8de-da1c8d89514a" class=""><strong>2. 빈칸에 들어갈 올바른 용어를 쓰시오.</strong><br/>* 각 문화가 지닌 독창성과 고유한 가치를 있는 그대로 전폭 인정하며, 문화 간에 절대적인 우열의 기준을 가리지 않는 열린 태도를 <strong>[문화 상대주의]</strong>라고 한다.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-819f-9983-c4fb9fe62da7" class=""><strong>3. 문화 상대주의가 반드시 필요한 거시적 이유를 &lt;보기&gt;에서 모두 골라 기호를 쓰시오.</strong><br/>&gt; <strong>&lt;보기&gt;</strong><br/>&gt; ㉠ 문화적 편견과 고정관념을 타파하여 사회 갈등을 예방함.<br/>&gt; ㉡ 우리 문화의 고유한 가치를 객관적으로 재인식하게 함.<br/>&gt; ㉢ 다양한 문화적 배경을 지닌 집단들의 평화로운 공존을 도모함.<br/>&gt; ㉣ 절대적인 단일 기준에 맞추어 문화의 등급과 우열을 정교하게 평가함.<br/>&gt; ㉤ 다른 문화를 아무런 선입견 없이 객관적으로 깊이 있게 이해하도록 도움.<br/>* <strong>정답:</strong> <strong>[ ㉠, ㉡, ㉢, ㉤ ]</strong> (※ ㉣은 문화 절대주의적 태도에 해당하므로 제외)</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8127-b9d2-cdd23c3b85ba" class=""><strong>4. 다음 성찰과 관련된 빈칸을 알맞게 채우시오.</strong><br/>* (1) 문화의 특수성만을 극한으로 강조한 나머지, 인류의 보편적 인권과 가치를 처참히 훼손하는 문화까지 무조건 존중해야 한다고 억지 부리는 위험한 오류 태도를 <strong>[극단적 문화 상대주의]</strong>라고 한다.<br/>* (2) 인류 전체가 시공간을 초월하여 보편적으로 수호하고 따라야 할 가장 근본적인 도덕 및 윤리적 표준을 <strong>[보편 윤리]</strong>라고 한다.</p></div><div style="display:contents" dir="auto"><h2 id="364fe79a-7d80-81c0-95e1-cf877408408e" class="">4. 다문화 사회와 문화적 다양성 존중 (교과서 106~113쪽)</h2></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-815f-8182-eac8c80e4a4d" class=""><strong>[학습 목표]</strong><br/>* 다문화 사회의 전 지구적 현황과 인구학적 양상을 정밀히 조사한다.<br/>* 문화적 다양성을 포용하고 존중하는 성숙한 자세를 바탕으로 갈등 해결 방안을 능동적으로 모색한다.</p></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-810c-a5da-dacc69fa784e"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81ff-a47c-fc2ea199699d" class="">1. 다문화 사회의 현황과 인구학적 양상</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8111-a33b-d3982c198b42" class="">(1) 다문화 사회의 정의</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81bb-9914-fac81f799c2b" class="bulleted-list"><li style="list-style-type:disc">한 국가나 지역 사회라는 경계 공간 안에서 인종, 언어, 종교, 국적 등 문화적 배경이 현격히 다른 <strong>다양한 소수 집단들이 기존의 내국인 주민들과 함께 대등하게 어울려 살아가면서 여러 문화 요소가 조화롭게 공존하는 사회</strong>를 지칭함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8194-b4e5-f74afb244b3f" class="bulleted-list"><li style="list-style-type:disc"><strong>대한민국의 현황:</strong> </li></ul></div><div style="display:contents" dir="ltr"><figure id="379fe79a-7d80-8030-a883-c426f39e4e0f" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2022.png"><img style="width:703.984375px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2022.png"/></a></figure></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8113-8739-d95fa9381b59"/></div><div style="display:contents" dir="auto"><p id="379fe79a-7d80-8099-9067-f47d274e47d6" class=""><strong>① 국내 거주 외국인 주민 수 및 비율 추이</strong></p></div><div style="display:contents" dir="auto"><p id="379fe79a-7d80-8092-89b4-c788b5eb1bb0" class="">코로나19 시기(2021년)에 일시적으로 <strong>감소했으나</strong>, 2022년에는 **총인구 대비 ‭4.4%‬**를 기록하며 다시 증가하는 추세이다</p></div><div style="display:contents" dir="auto"><p id="379fe79a-7d80-80d5-9085-e69f3a805829" class=""><strong>② 한국 국적이 아닌 외국인 주민 유형별 현황</strong>노동력 부족으로 **외국인 근로자가 노동력 부족으로 <strong>외국인 근로자</strong>가 가장 많고, 최근 유학원 유치 노력으로<strong> 유학생 수가 결혼 이민자 수를 추</strong>월했다.</p></div><div style="display:contents" dir="auto"><p id="379fe79a-7d80-8068-9f58-e24e7cc80ff9" class=""><strong>③ 한국 국적을 가진 외국인 주민 출신국별 현황</strong>한중 수교 이후 일자리를 찾아 이주한 **한국계 중국인(조선족)이 가장 많은 비중을 차지한다</p></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8199-9583-dd0b726da1aa" class="">(2) 다문화 사회가 가져오는 명암(明暗): 양면적 양상</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81a9-b086-edf59a626f13" class="">🟢 긍정적 측면 (사회의 발전 원동력)</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816d-b4a5-fc691373f894" class="bulleted-list"><li style="list-style-type:disc"><strong>문화의 [다양성 증진]:</strong> 일상생활 속에서 다채롭고 풍성한 이국적 문화를 자연스럽게 경험할 수 있어 국민의 삶과 문화적 선택의 스펙트럼이 획기적으로 넓어짐.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a0-8749-d76c5aae2c67" class="bulleted-list"><li style="list-style-type:disc"><strong>새로운 문화 발전의 촉진제:</strong> 서로 다른 문화 간의 역동적인 상호 작용과 접변을 통해 기존의 틀을 깨부수는 매우 창조적이고 혁신적인 융합 문화가 탄생함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81e0-a482-cd69b7d0b5da" class="bulleted-list"><li style="list-style-type:disc"><strong>국가 [경제 활성화] 및 노동력 공급:</strong> 젊고 유능한 이주민들의 적극적인 경제 활동 참여는 국가 잠재 성장률을 견인함. 특히 대한민국 사회의 가장 치명적인 문제인 고령화 및 <strong>[저출생 현상으로 발생한 극심한 산업 노동력 부족 문제]</strong>를 단숨에 해결해 주는 고마운 구원투수 역할을 함.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81ce-bf77-e0ea2e39059f" class="">🔴 부정적 측면 (극복해야 할 사회적 과제)</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b4-9ff5-d50964b7878e" class="bulleted-list"><li style="list-style-type:disc"><strong>문화적 격차에 따른 충돌:</strong> 새롭게 유입된 소수 집단의 문화와 오랜 세월 공고히 유지되어 온 기존의 주류 전통문화 간의 가치관·생활양식의 차이로 인해 일상적 마찰이 일어남.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8147-ad8b-d00a06c603bb" class="bulleted-list"><li style="list-style-type:disc"><strong>[편견]과 차별에 기반한 사회적 배제:</strong> 이주민들에 대한 내국인들의 보이지 않는 순혈주의적 편견, 고정관념, 소통 부족으로 인해 특정 문화적 배경을 지닌 소수자들을 차별하고 멸시하는 양상이 나타남.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b3-9652-fd8fdb388057" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue_background"><strong>제노포비아(Xenophobia)의 창궐:</strong></mark><mark class="highlight-blue_background"> 다른 문화권에서 건너온 외국인 이주민들을 향해 이유 없이 무분별한 혐오감을 표출하거나 증오하고 기피하는 심각한 </mark><mark class="highlight-blue_background"><strong>외국인 혐오증</strong></mark><mark class="highlight-blue_background"> 현상이 고개를 들어 사회적 대통합을 붕괴시킴.</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-818c-b3e3-c26653fe3373" class="bulleted-list"><li style="list-style-type:disc"><strong>경제적 자원 경쟁:</strong> 국내 취약계층 내국인 노동자와 이주민 노동자 간에 한정된 일자리 및 복지 혜택 자원을 둘러싸고 날카로운 생존권 경쟁과 반목이 발생함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d4-93f2-dbf118c26480" class="bulleted-list"><li style="list-style-type:disc"><strong>언어 장벽에 따른 [의사소통] 실패:</strong> 언어가 완벽히 통하지 않아 관공서 이용, 교육 현장, 법적 분쟁 등에서 오해와 소외 현상이 빈번히 유발됨.</li></ul></div><div style="display:contents" dir="auto"><blockquote id="364fe79a-7d80-8159-8f5b-c5c9b3ebd0c1" class="">💡 <strong>개념 돋보기</strong><br/>*<mark class="highlight-blue_background"> </mark><mark class="highlight-blue_background"><strong>제노포비아(Xenophobia):</strong></mark><mark class="highlight-blue_background"> 그리스어로 ’낯선 이방인’을 뜻하는 </mark><mark class="highlight-blue_background"><strong>제노스(Xenos)</strong></mark><mark class="highlight-blue_background">와 ’공포·혐오’를 뜻하는 </mark><mark class="highlight-blue_background"><strong>포보스(Phobos)</strong></mark><mark class="highlight-blue_background">의 합성어로, 소수 외국인을 혐오하고 배척하는 위험한 배타주의 현상.</mark></blockquote></div><div style="display:contents" dir="ltr"><figure id="379fe79a-7d80-80fc-9fd5-f4ccbeefba6b" class="image"><a href="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2023.png"><img style="width:703.991455078125px" src="%ED%86%B5%ED%95%A9%EC%82%AC%ED%9A%8C1_4%EB%8B%A8%EC%9B%90_%EC%9B%8C%ED%81%AC%EB%B6%81_%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/image%2023.png"/></a></figure></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-814b-b351-c75e3657c728"/></div><div style="display:contents" dir="auto"><p id="379fe79a-7d80-80ad-ba8d-edd944f37c66" class="">
+</p></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-818d-9905-cc381ab3c03b" class="">2. 다문화 사회의 갈등을 해결하기 위한 주체별 노력</h3></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8131-bdba-ce35e207f2a7" class="">(1) 개인적 차원의 실천과 성숙한 자세</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-816a-9fb9-e74bed32dc7f" class="bulleted-list"><li style="list-style-type:disc">반드시 <strong>[문화 상대주의 입장에서 문화 간의 다름과 차이를 편견 없이 인정]</strong>하고 따뜻하게 수용하려는 열린 안목을 가져야 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81b3-967a-c4db9a311b99" class="bulleted-list"><li style="list-style-type:disc">타문화에 대한 근거 없는 편견이나 왜곡된 고정관념을 과감히 쓰레기통에 버리고, 지구촌의 소중한 자산인 <strong>[문화적 다양성]</strong> 자체를 진심으로 존중하는 주체적 태도를 함양해야 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8179-b7e4-c74bb9d13dce" class="bulleted-list"><li style="list-style-type:disc">나와 생각, 종교, 외모, 풍습이 다를지라도 이를 억지로 고치려 하지 않고 있는 그대로 품어주는 격조 높은 <strong>관용(Tolerance)의 자세</strong>를 평소에 실천해야 함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8123-be73-e0b92705d5ba" class="bulleted-list"><li style="list-style-type:disc">문화 간 오해의 소지를 원천 차단하고 상호 문화적 문해력을 높이기 위해, 이주민 구성원들과 일상에서 끊임없이 따뜻하게 <strong>지속적으로 소통</strong>하려 노력해야 함.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81b6-bf2d-d79554bc96b6" class="">(2) 사회적·제도적 차원의 든든한 뒷받침</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81d2-a928-e59117cf3ec1" class="bulleted-list"><li style="list-style-type:disc"><strong>다문화 교육 기회의 획기적 제공:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8181-8084-df7f4e31ba9a" class="bulleted-list"><li style="list-style-type:circle">이주민들이 한국 사회에 신속하고 안정적으로 연착륙할 수 있도록 체계적인 한국어 교육(KSL) 및 맞춤형 취업·창업 기술 역량 강화 교육을 적극 지원함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8161-99de-c595fcc91664" class="bulleted-list"><li style="list-style-type:circle">이주민 가족뿐만 아니라, 일반 내국인 학생들과 지역사회 주민 전체를 대상으로 역지사지 태도를 기르는 <strong>다문화 수용성 교육 및 다문화 이해 프로그램</strong>을 의무적으로 대대적으로 확대 시행함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8142-a20b-d665bfdd4690" class="bulleted-list"><li style="list-style-type:disc"><strong>법적·제도적 보호 장치의 촘촘한 강화:</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8118-b6ee-cec8340f164f" class="bulleted-list"><li style="list-style-type:circle">국적, 인종, 직업 분야를 막론하고 고용, 의료 혜택, 자녀 교육 등 인간다운 삶을 영위할 모든 분야에서 이주민 차별을 금지하는 정책을 전방위 시행함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8186-b620-c3394e887e8d" class="bulleted-list"><li style="list-style-type:circle">관련 법률인 <code>&lt;다문화가족지원법&gt;</code>, <code>&lt;외국인근로자의 고용 등에 관한 법률&gt;</code> 등을 현장 중심으로 끊임없이 보완 개정하여 법률적 사각지대에서 눈물 흘리는 소수자가 없도록 보호함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81dd-a122-e9f2c8988e6f" class="bulleted-list"><li style="list-style-type:circle">지자체 중심으로 다문화 가정 부모의 안정적 취업 연계, 자녀들의 방과 후 학습 멘토링 지원, 다문화 가족 캠프 등 다채로운 상생 복지 사업을 지속해서 추진함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81d9-905b-e80bf5f694e0"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-81f1-a183-e4eb1de4a16b" class="">🏛️ (3)<mark class="highlight-blue_background"> 다문화 사회를 바라보는 이민자 통합 정책의 2대 관점</mark></h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-816f-ae62-df2e71b722d4" class="">정부가 다문화 사회를 통치하고 이주민들을 통합할 때 적용하는 정책적 관점은 크게 두 줄기로 나뉩니다.</p></div><div style="display:contents" dir="auto"><pre id="364fe79a-7d80-8143-aae4-e59468a3c4b3" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                  [ 이민자 통합 정책의 비교 ]
+
+    동화주의 (Assimilationism)              다문화주의 (Multiculturalism)
+┌──────────────────────────────┐        ┌──────────────────────────────┐
+│         용광로 이론          │        │        샐러드 볼 이론        │
+│   &quot;주류 문화로 모두 녹아라!&quot;  │        │ &quot;각자의 색깔로 조화를 이루자!&quot;│
+└──────────────────────────────┘        └──────────────────────────────┘</code></pre></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-812d-9122-c4a3dbc33d31" class="">① 동화주의 - 🍲 용광로 이론 / 미국🇺🇸</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8171-a384-ca4ec64e11a7" class="bulleted-list"><li style="list-style-type:disc"><strong>핵심 입장:</strong> 새롭게 유입된 이주민 소수 세력의 고유한 문화 요소를 완전히 지워버리고, 그들을 해당 국가의 거대한 <strong>주류 문화 체계와 언어, 가치관 속에 강제로 적응시키고 완벽히 흡수시켜 통합</strong>하려는 입장.</li></ul></div><div style="display:contents" dir="auto"><ul id="379fe79a-7d80-80fa-b22d-e2b37e38c2dd" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue_background"><strong>장점 : 순응, 결속, 통합</strong></mark></li></ul></div><div style="display:contents" dir="auto"><ul id="379fe79a-7d80-80b3-871b-f41a704b9880" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue_background"><strong>단점: 문화 다양성 존중x</strong></mark></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-819d-9d84-f834edd52885" class="bulleted-list"><li style="list-style-type:disc"><strong>비유:</strong> 모든 이질적인 광석을 뜨거운 용광로에 한데 집어넣으면 형태가 다 녹아 없어지고 균일한 하나의 새로운 쇳물(주류 문화)로 결합하여 나오는 현상에 비유됨.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8124-9b23-e12c1c6f10b0" class="bulleted-list"><li style="list-style-type:disc"><strong>국가 정책적 양상:</strong> 이민자가 주류 사회의 언어를 완벽히 구사하고 주류 사회의 행동 규범과 전통적 사회적 가치관을 군말 없이 전폭적으로 받아들이는 것만을 성공적인 이민 정착으로 간주함. 소수 문화의 독자성을 인정하지 않음.</li></ul></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8125-9048-c3f378a0b204" class="">② 다문화주의  -🥗 샐러드 볼 이론 / 캐나다 🇨🇦</h3></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8155-bdb5-ff49c6eef6c7" class="bulleted-list"><li style="list-style-type:disc"><strong>핵심 입장:</strong> 국가라는 커다란 틀 안에서 다양한 인종과 민족의 문화가 주류와 비주류라는 차별적 우열 계급의 구분 없이, <strong>서로 대등한 권리를 인정받으며 고유한 정체성과 특징을 선명히 유지한 채 아름다운 조화를 이루며 공존</strong>해야 한다고 굳게 믿는 입장.</li></ul></div><div style="display:contents" dir="auto"><ul id="379fe79a-7d80-80e8-b797-e87e6baadb80" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue_background"><strong>장점: 새로운 문화 창출</strong></mark></li></ul></div><div style="display:contents" dir="auto"><ul id="379fe79a-7d80-808b-afe9-f449108886a8" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-blue_background"><strong>단점: 연대, 결속이 떨어짐</strong></mark></li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81a9-8531-f728a58f58f4" class="bulleted-list"><li style="list-style-type:disc"><strong>비유:</strong> 샐러드 볼(그릇) 안에 담긴 토마토, 렛티스, 오이, 치즈가 각자가 가진 고유한 고유의 맛, 향, 식감, 색깔을 100% 온전히 유지하면서도, 드레싱 안에서 서로 절묘하게 어우러져 최고의 맛을 내는 현상에 비유됨.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-81c0-9020-d57767bab0af" class="bulleted-list"><li style="list-style-type:disc"><strong>🇨🇦 대표적 국가 정책 사례 (캐나다의 모자이크 정책):</strong><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8116-96a3-e0cf37d8ebb9" class="bulleted-list"><li style="list-style-type:circle">캐나다 정부는 1971년 세계 최초로 <strong>다문화주의(Multiculturalism)를 국가의 공식 정책 선언</strong>으로 채택함.</li></ul></div><div style="display:contents" dir="auto"><ul id="364fe79a-7d80-8181-bcbf-fd7438c50e90" class="bulleted-list"><li style="list-style-type:circle">이 정책은 수많은 색깔과 형태를 가진 독립된 작은 유리 조각들이 정교하게 어우러져 마침내 하나의 거대하고 경이로운 예술 작품을 완성해 내는 모자이크와 같다고 하여 <strong>[‘모자이크 정책’]</strong>이라고 칭송받음. 캐나다 정부는 소수 민족의 고유 언어 교육과 전통 축제를 국가 예산으로 전폭 지원하며, 다민족이 국가라는 거대한 연방 틀 속에서 서로를 존중하며 평화롭게 공존하는 사회 구현을 목표로 함.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-81ff-ada7-dab3a8ec5de8"/></div><div style="display:contents" dir="auto"><h3 id="364fe79a-7d80-8180-9fcd-fcdedeab3aae" class="">✏️ [개념 확인 문제풀이 - 4단원]</h3></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-81be-aaae-f3f247e31a02" class=""><strong>1. 다음 빈칸에 들어갈 올바른 핵심 용어를 채우시오.</strong><br/>* 한 사회나 국가 조직 안에서 인종, 언어, 종교, 신념 등 문화적 배경이 현격히 다른 이질적 집단들이 서로를 인정하며 조화롭게 공존해 나가는 사회 체제를 <strong>[다문화 사회]</strong>라고 정의한다.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-815d-9f36-efa246988544" class=""><strong>2. 다문화 사회의 정책적 관점을 설명한 내용 중 알맞은 단어를 괄호 안에서 골라 표(◯) 하시오.</strong><br/>* (1) 이주민의 소수 문화를 지워버리고 주류 문화에 강제로 흡수·통합시키려는 입장을 (<strong>[동화주의]</strong> / 다문화주의)라고 부르며, 이를 대변하는 대표적인 이론은 (<strong>[용광로 이론]</strong> / 샐러드 볼 이론)이다.<br/>* (2) 이주민 소수 집단의 고유성을 주류 문화와 차별 없이 동등하게 인정하며 대등한 공존을 추구하는 입장을 (동화주의 / <strong>[다문화주의]</strong>)라고 부르며, 캐나다의 (<strong>[모자이크 정책]</strong> / 용광로 정책)이 이에 완전히 부합한다.</p></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-811d-bbee-dec3964766a2" class=""><strong>3. 다문화 사회의 긍정적 영향으로 알맞은 것을 &lt;보기&gt;에서 모두 골라 기호를 쓰시오.</strong><br/>&gt; <strong>&lt;보기&gt;</strong><br/>&gt; ㉠ 사회 전체의 문화적 스펙트럼과 다양성을 고도로 증진함.<br/>&gt; ㉡ 저출생 고령화로 야기된 산업 현장의 노동력 부족 문제를 말끔히 해결함.<br/>&gt; ㉢ 외국인 이주민을 무분별하게 혐오하는 제노포비아 현상을 극심하게 유발함.<br/>&gt; ㉣ 다양한 문화 간의 역동적 상호작용을 통해 혁신적이고 창조적인 문화를 촉진함.<br/>* <strong>정답:</strong> <strong>[ ㉠, ㉡, ㉣ ]</strong> (※ ㉢은 다문화 사회의 대표적인 부정적 그늘이므로 제외)</p></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-815d-9cbb-e7634cfd62f9"/></div><div style="display:contents" dir="auto"><p id="364fe79a-7d80-8191-bedd-fe9a78577e3f" class="">본 정리본은 통합사회 1 과목의 4단원 ’문화와 다양성’에 수록된 모든 핵심 이론의 정답과 자료를 마크다운 표준 서식에 맞춰 가독성을 극대화하여 구성한 최종본입니다. 시험 대비 및 단원 요약 교안으로 완벽히 활용하실 수 있습니다.</p></div><div style="display:contents" dir="auto"><hr id="364fe79a-7d80-8012-8dce-c586ef16451f"/></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
