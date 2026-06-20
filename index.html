@@ -178,7 +178,7 @@
 
         // 5. 파일 삭제
         function deleteFile(path) {
-            if(!confirm(`정말 ${path} 파일을 삭제하시겠습니까?`)) return;
+            if(!confirm(`정말 ${path} 파일을 삭제하시겠습니까?`)) return;l
             const sha = currentFiles[path];
             const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
             
