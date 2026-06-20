@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ezstudy 파일 탐색기</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background: #f4f4f9; border-radius: 5px; }
+        a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>📁 ezstudy 학습 자료 목록</h1>
+    <div id="file-list-container">
+        <p>파일 목록을 불러오는 중...</p>
+    </div>
+
+    <script>
+        // 1. 자신의 GitHub 정보 입력
+        const owner = 'appoung';
+        const repo = 'ezstudy';
+        const path = 'tongsa'; // 확인하고 싶은 폴더 이름
+
+        // 2. GitHub REST API를 통해 폴더 내부 정보 가져오기
+        const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('네트워크 응답에 문제가 있습니다.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const container = document.getElementById('file-list-container');
+                container.innerHTML = ''; // 로딩 문구 제거
+
+                // html 파일만 필터링 (원치 않으면 filter 제외 가능)
+                const htmlFiles = data.filter(file => file.name.endsWith('.html'));
+
+                if (htmlFiles.length === 0) {
+                    container.innerHTML = '<p>폴더 안에 HTML 파일이 없습니다.</p>';
+                    return;
+                }
+
+                const ul = document.createElement('ul');
+                htmlFiles.forEach(file => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    
+                    // GitHub Pages 배포 주소 형식으로 링크 생성
+                    // 예: appoung.github.io/ezstudy/tongsa/4.html (또는 확장자 제거 버전)
+                    a.href = `https://${owner}.github.io/${repo}/${path}/${file.name}`;
+                    a.textContent = `📄 ${file.name} (바로가기)`;
+                    a.target = "_blank"; // 새 탭에서 열기
+                    
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                });
+
+                container.appendChild(ul);
+            })
+            .catch(error => {
+                console.error('에러 발생:', error);
+                document.getElementById('file-list-container').innerHTML = 
+                    '<p style="color:red;">파일 목록을 불러오는 데 실패했습니다. (API 제한 또는 경로 오류)</p>';
+            });
+    </script>
+</body>
+</html>
